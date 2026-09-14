@@ -64,7 +64,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T4: Build Contact subpage
+#### T4: Build Contact subpage [DONE]
 **What**: Implement /contact route with availability badge, booking button, copy email action, and form inputs.
 **Where**: `src/app/contact/page.tsx`
 **Depends on**: T3

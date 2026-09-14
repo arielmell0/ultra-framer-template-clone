@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 1 / T4 - Build Contact subpage
-- **Completed**: T1, T2, T3
-- **In-progress** (file:line): src/app/contact/page.tsx
-- **Next step**: Implement /contact route with availability badge, booking button, copy email action, and form inputs
+- **Phase / Task**: Phase 1 / T5 - Build Work listing page
+- **Completed**: T1, T2, T3, T4
+- **In-progress** (file:line): src/app/work/page.tsx
+- **Next step**: Implement /work listing route displaying all 3 project cards with links to /work/[slug]
 - **Blockers**: none
-- **Uncommitted files**: src/app/stack/, .specs/
+- **Uncommitted files**: src/app/contact/, .specs/
 - **Branch**: master
