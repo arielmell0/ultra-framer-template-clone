@@ -69,7 +69,7 @@ T8 -> T9
 **Tests**: unit
 **Gate**: quick
 
-#### T5: Update Contact page with Ariel's links & messaging
+#### T5: Update Contact page with Ariel's links & messaging [DONE]
 **What**: Update /contact with Ariel's LinkedIn booking and contact form.
 **Where**: `src/app/contact/page.tsx`
 **Depends on**: T4

@@ -4,13 +4,14 @@ import { useState } from "react";
 import { LeftRailNav } from "@/components/LeftRailNav";
 import { Footer } from "@/components/Footer";
 import { CopyIcon } from "@/components/icons";
+import { profile } from "@/data/profile";
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   function handleCopy() {
-    navigator.clipboard?.writeText("dean@alpha.com");
+    navigator.clipboard?.writeText(profile.email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }
@@ -35,12 +36,12 @@ export default function ContactPage() {
 
           <div className="mt-7 flex items-center justify-center gap-3">
             <a
-              href="https://cal.com/justinfarrugia/30min"
+              href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
               className="inline-flex h-[38px] w-[193px] items-center justify-center gap-2 rounded-lg bg-[#282828] text-[15px] font-medium text-[#ededed] transition-colors hover:bg-[#323232]"
             >
-              <span>Book call</span>
+              <span>LinkedIn</span>
               <svg
                 width="14"
                 height="14"
