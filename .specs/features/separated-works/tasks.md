@@ -47,7 +47,7 @@ T7 -> T8
 **Tests**: unit
 **Gate**: quick
 
-#### T2: Update projects data module with 6 separated marketing systems
+#### T2: Update projects data module with 6 separated marketing systems [DONE]
 **What**: Update src/data/projects.ts with separate systems: Admin CRM, Advertisers Platform, Agencies Platform, Influencer App, Influencer Web, and Invoicing Portal, with rich case studies and prints.
 **Where**: `src/data/projects.ts`
 **Depends on**: T1
