@@ -93,6 +93,35 @@ export default async function ProjectDetailPage({ params }: Props) {
             ))}
           </section>
 
+          {/* Screenshot Prints Gallery */}
+          {project.prints && project.prints.length > 0 && (
+            <section className="flex flex-col gap-6">
+              <header>
+                <h2 className="text-[15px] font-normal text-[#a0a0a0] uppercase tracking-wider">
+                  Project Prints & Flow
+                </h2>
+              </header>
+              <div className="flex flex-col gap-8">
+                {project.prints.map((print, index) => (
+                  <figure key={index} className="flex flex-col gap-2">
+                    <div className="overflow-hidden rounded-xl bg-[#282828] border border-white/5">
+                      <Image
+                        src={print.src}
+                        alt={print.caption}
+                        width={540}
+                        height={340}
+                        className="w-full h-auto object-contain"
+                      />
+                    </div>
+                    <figcaption className="text-[14px] leading-[21px] text-[#707070] px-1">
+                      {print.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+          )}
+
           <Footer />
         </div>
       </main>

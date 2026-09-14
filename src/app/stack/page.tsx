@@ -47,7 +47,7 @@ export default function StackPage() {
           </h2>
           <div className="grid grid-cols-3 gap-3 w-full">
             {profile.software.map((item) => {
-              const Icon = iconMap[item.iconName];
+              const Icon = item.iconName ? iconMap[item.iconName] : undefined;
               return (
                 <div
                   key={item.name}

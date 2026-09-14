@@ -92,7 +92,7 @@ T8 -> T9
 **Tests**: unit
 **Gate**: quick
 
-#### T8: Enhance Work detail page with screenshot prints gallery
+#### T8: Enhance Work detail page with screenshot prints gallery [DONE]
 **What**: Update src/app/work/[slug]/page.tsx to render Ariel's case studies and an image gallery of prints for Infleux.
 **Where**: `src/app/work/[slug]/page.tsx`
 **Depends on**: T7
