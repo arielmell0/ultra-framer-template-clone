@@ -77,7 +77,7 @@ T7 -> T8
 **Tests**: unit
 **Gate**: quick
 
-#### T6: Add backward-compatible redirect for legacy /work/infleux route
+#### T6: Add backward-compatible redirect for legacy /work/infleux route [DONE]
 **What**: Create src/app/work/infleux/page.tsx to redirect legacy traffic smoothly to /work/admin-crm.
 **Where**: `src/app/work/infleux/page.tsx`
 **Depends on**: T5
