@@ -12,7 +12,7 @@ export function Work() {
       <div className="flex flex-col gap-4 w-full">
         {projects.map((project) => (
           <Link
-            key={project.title}
+            key={project.slug}
             href={`/work/${project.slug}`}
             className="block rounded-xl bg-[#282828] pt-3 px-2 pb-2 transition hover:bg-[#2e2e2e]"
           >
@@ -38,7 +38,7 @@ export function Work() {
           </Link>
         ))}
         <Link
-          href="/work/infleux"
+          href="/work/admin-crm"
           className="inline-flex h-[38px] w-full items-center justify-center gap-2 rounded-lg bg-[#282828] text-[15px] text-[#ededed] transition hover:bg-[#2e2e2e]"
         >
           <span>View all</span>

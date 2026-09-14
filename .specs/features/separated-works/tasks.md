@@ -63,7 +63,7 @@ T7 -> T8
 
 ### Phase 2: UI Components, Routing & Verification
 
-#### T4: Update Home Work section to render all separated projects
+#### T4: Update Home Work section to render all separated projects [DONE]
 **What**: Update src/components/Work.tsx to display all projects and update "View all" to link to /work/admin-crm.
 **Where**: `src/components/Work.tsx`
 **Depends on**: T3

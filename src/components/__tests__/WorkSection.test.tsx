@@ -4,7 +4,7 @@ import { Work } from "@/components/Work";
 import { projects } from "@/data/projects";
 
 describe("Work component", () => {
-  it("renders all Ariel Mello project cards and link to /work/infleux", () => {
+  it("renders all separated project cards and link to /work/admin-crm", () => {
     render(<Work />);
     expect(screen.getByRole("heading", { name: "Work" })).toBeDefined();
 
@@ -13,11 +13,11 @@ describe("Work component", () => {
       expect(screen.getByText(project.title)).toBeDefined();
     }
 
-    // Check links to /work/:slug
-    const infleuxLink = screen.getByRole("link", { name: /Infleux/i });
-    expect(infleuxLink.getAttribute("href")).toBe("/work/infleux");
+    // Check link to primary flagship /work/admin-crm
+    const adminLink = screen.getByRole("link", { name: /Admin CRM for Marketing Company/i });
+    expect(adminLink.getAttribute("href")).toBe("/work/admin-crm");
 
     const viewAllLink = screen.getByRole("link", { name: /View all/i });
-    expect(viewAllLink.getAttribute("href")).toBe("/work/infleux");
+    expect(viewAllLink.getAttribute("href")).toBe("/work/admin-crm");
   });
 });
