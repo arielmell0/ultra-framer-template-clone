@@ -80,7 +80,7 @@ T10 -> T11
 
 ### Phase 2: Dynamic Detail Routes, Content Collections & Navigation Parity
 
-#### T6: Build Work project detail page
+#### T6: Build Work project detail page [DONE]
 **What**: Implement /work/[slug] route displaying project cover, client, timeline, role, outcome, and case study narrative.
 **Where**: `src/app/work/[slug]/page.tsx`
 **Depends on**: T5
