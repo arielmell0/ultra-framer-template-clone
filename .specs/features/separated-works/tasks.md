@@ -84,7 +84,7 @@ T7 -> T8
 **Tests**: integration
 **Gate**: quick
 
-#### T7: Update ProjectDetailPage and component test suites
+#### T7: Update ProjectDetailPage and component test suites [DONE]
 **What**: Update ProjectDetailPage and its test in src/components/__tests__/ProjectDetailPage.test.tsx and WorkSection.test.tsx.
 **Where**: `src/components/__tests__/ProjectDetailPage.test.tsx`
 **Depends on**: T6
