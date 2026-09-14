@@ -24,7 +24,7 @@ const items = [
 ];
 
 export function LeftRailNav() {
-  const pathname = usePathname();
+  const pathname = usePathname() || "";
 
   return (
     <nav className="fixed left-[21px] top-1/2 -translate-y-1/2 z-50 flex flex-col gap-[20px]">

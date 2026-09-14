@@ -55,7 +55,7 @@ T8 -> T9
 **Tests**: unit
 **Gate**: quick
 
-#### T3: Update About subpage with Experience & Education
+#### T3: Update About subpage with Experience & Education [DONE]
 **What**: Update /about to render Ariel's experience (SideUp, Infleux, Upwork, IFC, Aliança) and education (IFC, ULBRA, IFRO).
 **Where**: `src/app/about/page.tsx`
 **Depends on**: T2
