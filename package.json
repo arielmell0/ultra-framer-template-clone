@@ -1,5 +1,5 @@
 {
-  "name": "ai-website-clone-template",
+  "name": "ultra-framer-clone",
   "version": "0.4.0",
   "private": true,
   "description": "Clone any website into a clean, modern Next.js codebase using AI coding agents",
@@ -27,9 +27,9 @@
     "node": ">=24"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4100",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 4100",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check": "npm run lint && npm run typecheck && npm run build"
