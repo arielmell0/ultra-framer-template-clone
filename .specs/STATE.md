@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 1 / T3 - Build Stack subpage
-- **Completed**: T1, T2
-- **In-progress** (file:line): src/app/stack/page.tsx
-- **Next step**: Implement /stack route with software tools, workspace photo, and physical hardware
+- **Phase / Task**: Phase 1 / T4 - Build Contact subpage
+- **Completed**: T1, T2, T3
+- **In-progress** (file:line): src/app/contact/page.tsx
+- **Next step**: Implement /contact route with availability badge, booking button, copy email action, and form inputs
 - **Blockers**: none
-- **Uncommitted files**: src/app/about/, src/components/Footer.tsx, .specs/
+- **Uncommitted files**: src/app/stack/, .specs/
 - **Branch**: master

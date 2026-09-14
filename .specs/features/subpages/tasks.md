@@ -57,7 +57,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T3: Build Stack subpage
+#### T3: Build Stack subpage [DONE]
 **What**: Implement /stack route with Software grid, Workspace photo and Physical hardware grid.
 **Where**: `src/app/stack/page.tsx`
 **Depends on**: T2
