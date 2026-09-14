@@ -10,7 +10,6 @@ import {
   NavStackIcon,
   NavAboutIcon,
   NavContactIcon,
-  SearchIcon,
 } from "@/components/icons";
 
 interface NavItem {
@@ -38,7 +37,7 @@ const items: NavItem[] = [
   },
   { label: "Stack", href: "/stack", Icon: NavStackIcon },
   { label: "About", href: "/about", Icon: NavAboutIcon },
-  { label: "Contact", href: "/contact", Icon: NavContactIcon },
+  { label: "Contact", href: "/contact", Icon: NavContactIcon, hidden: true },
 ];
 
 export function LeftRailNav() {
@@ -82,18 +81,6 @@ export function LeftRailNav() {
           </Link>
         );
       })}
-      <button
-        type="button"
-        className="group relative flex items-center"
-      >
-        <SearchIcon className="h-6 w-6 text-[#707070] transition-colors group-hover:text-white" />
-        <div className="absolute left-[calc(100%+24px)] top-1/2 -translate-y-1/2 opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 flex items-center gap-1 rounded-[6px] bg-[#343434] px-[6px] py-[4px] text-[12px] text-[#ededed] shadow-lg whitespace-nowrap z-50">
-          <span>Search</span>
-          <span className="rounded-[3px] bg-[#505050] px-1 text-[10px] text-[#ededed] font-sans">
-            /
-          </span>
-        </div>
-      </button>
     </nav>
   );
 }

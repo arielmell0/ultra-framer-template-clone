@@ -95,23 +95,6 @@ export const profile: Profile = {
       summary:
         "5-star freelance delivery: Figma-to-React landing CMS with Puck; RAG education system with LangChain + Pinecone after API recovery work.",
     },
-    {
-      title: "Research Scholar",
-      company: "Instituto Federal Catarinense",
-      type: "Apprentice",
-      period: "Feb 2018 — Dec 2019",
-      location: "Santa Rosa do Sul, SC",
-      summary:
-        "Post-harvest research on agricultural storage; olive and pomegranate collections; presented at 7º SICT Sul.",
-    },
-    {
-      title: "Summer Intern",
-      company: "Aliança Agropecuária",
-      type: "Full-time",
-      period: "Jan 2019 — Mar 2019",
-      location: "Torres, RS",
-      summary: "Agricultural internship and practice report.",
-    },
   ],
   education: [
     {
