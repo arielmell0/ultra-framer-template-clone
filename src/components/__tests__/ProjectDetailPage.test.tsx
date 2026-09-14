@@ -10,22 +10,22 @@ describe("ProjectDetailPage", () => {
     render(page);
 
     // Header and metadata
-    expect(screen.getByRole("heading", { name: "Admin CRM for Marketing Company" })).toBeDefined();
-    expect(screen.getByText("Marketing Platform")).toBeDefined();
+    expect(screen.getByRole("heading", { name: "Admin CRM for marketing company" })).toBeDefined();
+    expect(screen.getByText("Marketing Company")).toBeDefined();
     expect(screen.getByText("2023 – 2025")).toBeDefined();
-    expect(screen.getByText("Lead Full Stack Developer")).toBeDefined();
+    expect(screen.getByText("Full Stack Developer")).toBeDefined();
 
     // Prints gallery
     expect(screen.getByText("Project Prints & Flow")).toBeDefined();
-    expect(screen.getByText(/Content Curatorship System/i)).toBeDefined();
-    expect(screen.getByText(/Influencer Profile CRM/i)).toBeDefined();
+    expect(screen.getByText(/influencers stories curatorship system/i)).toBeDefined();
+    expect(screen.getByText(/influencer profile crm/i)).toBeDefined();
 
     // Up next in master-detail sidebar
-    expect(screen.getByText("Advertiser Marketing Platform")).toBeDefined();
-    expect(screen.getByText("Talent Agency & Assessor Platform")).toBeDefined();
-    expect(screen.getByText("Influencer Mobile App")).toBeDefined();
-    expect(screen.getByText("Influencer Web Portal")).toBeDefined();
-    expect(screen.getByText("Creator Invoicing & Accountant Portal")).toBeDefined();
+    expect(screen.getByText("Advertiser Platform")).toBeDefined();
+    expect(screen.getByText("Assessor Platform for Influencer Management")).toBeDefined();
+    expect(screen.getByText("Influencer App (App-Loja)")).toBeDefined();
+    expect(screen.getByText("Influencer Web Platform")).toBeDefined();
+    expect(screen.getByText("Invoicing & Accountant Platform (NFs)")).toBeDefined();
     expect(screen.getByText("SideUp")).toBeDefined();
   });
 
@@ -35,9 +35,9 @@ describe("ProjectDetailPage", () => {
     });
     render(page);
 
-    expect(screen.getByRole("heading", { name: "Creator Invoicing & Accountant Portal" })).toBeDefined();
-    expect(screen.getByText(/Influencer Invoicing Home/i)).toBeDefined();
-    expect(screen.getByText(/Accountant Portal Dashboard/i)).toBeDefined();
-    expect(screen.getByText(/Accountant Delegation Flow/i)).toBeDefined();
+    expect(screen.getByRole("heading", { name: "Invoicing & Accountant Platform (NFs)" })).toBeDefined();
+    expect(screen.getByText(/Influencer view/i)).toBeDefined();
+    expect(screen.getByText(/Accountant view/i)).toBeDefined();
+    expect(screen.getByText(/Add accountant flow/i)).toBeDefined();
   });
 });

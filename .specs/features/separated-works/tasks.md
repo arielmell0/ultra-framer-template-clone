@@ -34,6 +34,7 @@ T4 -> T5
 T5 -> T6
 T6 -> T7
 T7 -> T8
+T8 -> T9
 ```
 
 ## Task Breakdown
@@ -97,3 +98,10 @@ T7 -> T8
 **Depends on**: T7
 **Tests**: e2e
 **Gate**: full
+
+#### T9: Refine project descriptions to be concise, grounded, and team-focused [DONE]
+**What**: Update src/data/projects.ts with concise, non-inflated descriptions focused on the actual systems worked on with other developers.
+**Where**: `src/data/projects.ts`
+**Depends on**: T8
+**Tests**: unit
+**Gate**: quick
