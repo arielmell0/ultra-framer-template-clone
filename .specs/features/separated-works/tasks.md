@@ -91,7 +91,7 @@ T7 -> T8
 **Tests**: integration
 **Gate**: full
 
-#### T8: End-to-end verification, typecheck, build, and visual validation
+#### T8: End-to-end verification, typecheck, build, and visual validation [DONE]
 **What**: Run full test suite, typecheck, static build of all pages, and verify visual appearance.
 **Where**: `tests/e2e`
 **Depends on**: T7

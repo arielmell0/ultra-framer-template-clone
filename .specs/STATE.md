@@ -18,16 +18,23 @@
 - **Date**: 2026-09-13
 - **Status**: active
 
+### AD-003
+- **Decision**: Separate the marketing platform ecosystem into 6 distinct standalone project showcases (Admin CRM, Advertiser Marketing Platform, Talent Agency & Assessor Platform, Influencer Mobile App, Influencer Web Portal, Creator Invoicing & Accountant Portal), each featuring in-depth engineering narratives and high-resolution screenshot galleries from `project-prints/infleux/`.
+- **Reason**: Shifts focus from a single monolithic company name ("Infleux") to the specific systems, platforms, and architectures engineered by Ariel Mello, highlighting diverse full-stack, mobile, CRM, and financial compliance capabilities.
+- **Trade-off**: Increases total project count to 9 (including SideUp and Upwork projects); default work route is `/work/admin-crm` with backward-compatible redirect from `/work/infleux`.
+- **Scope**: Work listing, ProjectDetailPage, LeftRailNav, SubpageSidebar, project-prints.
+- **Date**: 2026-09-14
+- **Status**: active
+
 ---
 
 ## Handoff
 
-- **Feature**: ariel-portfolio
-- **Phase / Task**: Phase 2 / T9 - Complete
-- **Completed**: T1 (Profile data), T2 (Hero & About), T3 (About page experience/education), T4 (Stack subpage), T5 (Contact page), T6 (Projects data & prints), T7 (Work section & redirects), T8 (Work detail gallery), T9 (E2E verification & visual testing)
+- **Feature**: separated-works
+- **Phase / Task**: Phase 2 / T8 - Complete
+- **Completed**: T1 (Synchronize project-prints into clone and public), T2 (Projects data module with 6 separated platforms), T3 (Projects unit test suite), T4 (Home Work section update), T5 (LeftRailNav and work redirect to admin-crm), T6 (Legacy infleux redirect), T7 (ProjectDetailPage tests), T8 (E2E verification, typecheck, build, visual validation)
 - **In-progress** (file:line): None
 - **Next step**: None (feature completed and verified)
 - **Blockers**: none
 - **Uncommitted files**: none
 - **Branch**: master
-
