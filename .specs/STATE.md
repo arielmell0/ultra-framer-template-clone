@@ -10,15 +10,23 @@
 - **Date**: 2026-09-13
 - **Status**: active
 
+### AD-002
+- **Decision**: Port real Ariel Mello portfolio data from `ariel-landing` (bio, experience, education, tech stack, and Infleux project prints) directly into `ultra.framer.clone` while keeping Ultra Framer's pixel-perfect styling tokens, subpage sidebars, and responsive grid layout.
+- **Reason**: The user wants the Ultra Framer reference design to showcase their personal portfolio information with real project screenshots.
+- **Trade-off**: Replaces generic "Dean Smith" placeholder text with real career achievements.
+- **Scope**: Profile, Hero, About, Work, Stack, Contact.
+- **Date**: 2026-09-13
+- **Status**: active
+
 ---
 
 ## Handoff
 
-- **Feature**: subpages
-- **Phase / Task**: Phase 2 / T11 - Complete
-- **Completed**: T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11
-- **In-progress** (file:line): none - all tasks executed
-- **Next step**: Run E2E click-through verification, capture screenshots, and produce validation report
+- **Feature**: ariel-portfolio
+- **Phase / Task**: Phase 1 / T1 - In Progress
+- **Completed**: None
+- **In-progress** (file:line): `src/data/profile.ts`
+- **Next step**: Implement T1 (profile data module and unit tests)
 - **Blockers**: none
-- **Uncommitted files**: next.config.ts, src/components/Work.tsx, src/app/page.tsx, .specs/
+- **Uncommitted files**: vitest.config.ts, package.json, public/images/ariel-avatar.jpg, public/images/projects/, .specs/
 - **Branch**: master
