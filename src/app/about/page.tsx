@@ -5,9 +5,12 @@ import { profile } from "@/data/profile";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-[#232323] text-[#ededed]">
+    <div className="min-h-screen bg-[#232323] text-[#ededed] flex">
       <LeftRailNav />
-      <main className="w-full max-w-[540px] mx-auto px-4 md:px-0 py-10 flex flex-col gap-10">
+      {/* Spacer for 65px LeftRailNav on desktop */}
+      <div className="w-[65px] shrink-0 hidden lg:block" />
+      <div className="flex-1 min-w-0 flex justify-center">
+        <main className="w-full max-w-[540px] px-4 md:px-0 py-10 flex flex-col gap-10">
         <header>
           <h1 className="text-2xl font-normal text-white">About</h1>
           <p className="mt-2 text-xl text-[#707070]">{profile.aboutSubtitle}</p>
@@ -74,6 +77,7 @@ export default function AboutPage() {
 
         <Footer />
       </main>
+      </div>
     </div>
   );
 }
