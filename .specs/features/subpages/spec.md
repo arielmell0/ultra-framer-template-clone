@@ -88,7 +88,7 @@ Each requirement gets a unique ID for tracking across design, tasks, and validat
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| SUB-01 | P1: Core Subpages Implementation | Tasks | Pending |
+| SUB-01 | P1: Core Subpages Implementation | Tasks | Verified |
 | SUB-02 | P1: Core Subpages Implementation | Tasks | Pending |
 | SUB-03 | P1: Core Subpages Implementation | Tasks | Pending |
 | SUB-04 | P1: Core Subpages Implementation | Tasks | Pending |

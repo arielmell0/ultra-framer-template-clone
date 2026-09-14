@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 1 / T2 - Build About subpage
-- **Completed**: T1
-- **In-progress** (file:line): src/app/about/page.tsx
-- **Next step**: Implement /about subpage with real Dean Smith content and layout
+- **Phase / Task**: Phase 1 / T3 - Build Stack subpage
+- **Completed**: T1, T2
+- **In-progress** (file:line): src/app/stack/page.tsx
+- **Next step**: Implement /stack route with software tools, workspace photo, and physical hardware
 - **Blockers**: none
-- **Uncommitted files**: public/images/, .specs/
+- **Uncommitted files**: src/app/about/, src/components/Footer.tsx, .specs/
 - **Branch**: master

@@ -50,7 +50,7 @@ T10 -> T11
 **Tests**: integration
 **Gate**: quick
 
-#### T2: Build About subpage
+#### T2: Build About subpage [DONE]
 **What**: Implement /about route with header, Intro, Experience, Education sections and shared LeftRailNav.
 **Where**: `src/app/about/page.tsx`
 **Depends on**: T1
