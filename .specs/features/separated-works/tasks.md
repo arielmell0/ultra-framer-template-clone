@@ -70,7 +70,7 @@ T7 -> T8
 **Tests**: unit
 **Gate**: quick
 
-#### T5: Update LeftRailNav and work index redirect for admin-crm flagship
+#### T5: Update LeftRailNav and work index redirect for admin-crm flagship [DONE]
 **What**: Update LeftRailNav.tsx and src/app/work/page.tsx to route to /work/admin-crm.
 **Where**: `src/components/LeftRailNav.tsx`
 **Depends on**: T4
