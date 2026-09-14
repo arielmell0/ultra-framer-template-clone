@@ -78,7 +78,7 @@ T8 -> T9
 
 ### Phase 2: Projects, Prints & Master-Detail Integration
 
-#### T6: Update Projects data with Ariel's real works and prints
+#### T6: Update Projects data with Ariel's real works and prints [DONE]
 **What**: Update src/data/projects.ts with Infleux, SideUp, Upwork CMS, Upwork RAG, gallery prints, and detailed case studies.
 **Where**: `src/data/projects.ts`, `src/data/projects.test.ts`
 **Depends on**: T5
