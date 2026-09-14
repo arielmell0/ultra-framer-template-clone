@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 2 / T10 - Build Store product detail page
-- **Completed**: T1, T2, T3, T4, T5, T6, T7, T8, T9
-- **In-progress** (file:line): src/app/store/[slug]/page.tsx
-- **Next step**: Implement /store/[slug] dynamic route with hero, pricing, badges, buy/preview actions, and features
+- **Phase / Task**: Phase 2 / T11 - Configure route aliases and shared Footer
+- **Completed**: T1, T2, T3, T4, T5, T6, T7, T8, T9, T10
+- **In-progress** (file:line): next.config.ts:1
+- **Next step**: Configure redirects for /About, /Stack, /Contact and ensure shared Footer and Home page integration
 - **Blockers**: none
-- **Uncommitted files**: src/data/products.ts, src/app/store/, .specs/
+- **Uncommitted files**: src/app/store/[slug]/, .specs/
 - **Branch**: master

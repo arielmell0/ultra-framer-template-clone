@@ -108,7 +108,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T10: Build Store product detail page
+#### T10: Build Store product detail page [DONE]
 **What**: Implement /store/[slug] route with product hero, badges, pricing, preview gallery, and features list.
 **Where**: `src/app/store/[slug]/page.tsx`
 **Depends on**: T9
