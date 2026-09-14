@@ -15,7 +15,7 @@ import {
 
 const items = [
   { label: "Home", href: "/", Icon: NavHomeIcon },
-  { label: "Work", href: "/work/new-mobile-app-for-alpha", Icon: NavWorkIcon },
+  { label: "Work", href: "/work/infleux", Icon: NavWorkIcon },
   { label: "Writing", href: "/writing/blockchain-and-design-opportunities-and-challenges-for-designers-in-the-crypto-industry", Icon: NavWritingIcon },
   { label: "Store", href: "/store/ultra-framer-template", Icon: NavStoreIcon },
   { label: "Stack", href: "/stack", Icon: NavStackIcon },

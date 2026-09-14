@@ -38,7 +38,7 @@ export function Work() {
           </Link>
         ))}
         <Link
-          href="/work/new-mobile-app-for-alpha"
+          href="/work/infleux"
           className="inline-flex h-[38px] w-full items-center justify-center gap-2 rounded-lg bg-[#282828] text-[15px] text-[#ededed] transition hover:bg-[#2e2e2e]"
         >
           <span>View all</span>

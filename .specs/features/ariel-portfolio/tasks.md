@@ -85,7 +85,7 @@ T8 -> T9
 **Tests**: unit
 **Gate**: quick
 
-#### T7: Update Home Work section & listing redirect
+#### T7: Update Home Work section & listing redirect [DONE]
 **What**: Render Ariel's project cards on Home page Work section and link to /work/infleux.
 **Where**: `src/components/Work.tsx`, `src/app/work/page.tsx`
 **Depends on**: T6
