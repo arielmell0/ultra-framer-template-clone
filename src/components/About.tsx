@@ -1,8 +1,4 @@
-const paragraphs = [
-  "I'm Dean Smith, a multidisciplinary designer based in New York City.",
-  "With over 15 years of experience in the field, I take pride in delivering visually stunning and user-friendly designs that exceed client expectations.",
-  "Whether it's collaborating with cross-functional teams or leading design projects, my attention to detail and dedication to excellence has earned me a reputation for delivering exceptional results.",
-];
+import { profile } from "@/data/profile";
 
 export function About() {
   return (
@@ -11,7 +7,7 @@ export function About() {
         About
       </h2>
       <div className="space-y-4 text-[15px] leading-[22.5px] text-[#ededed]">
-        {paragraphs.map((p) => (
+        {profile.about.map((p) => (
           <p key={p}>{p}</p>
         ))}
       </div>

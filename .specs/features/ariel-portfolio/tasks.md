@@ -48,7 +48,7 @@ T8 -> T9
 **Tests**: unit
 **Gate**: quick
 
-#### T2: Update Hero & About components on Home page
+#### T2: Update Hero & About components on Home page [DONE]
 **What**: Update Hero with Ariel Mello avatar, headline, RS Brazil location ticker, and LinkedIn link. Update About with bio paragraphs.
 **Where**: `src/components/Hero.tsx`, `src/components/About.tsx`, `src/app/page.tsx`
 **Depends on**: T1

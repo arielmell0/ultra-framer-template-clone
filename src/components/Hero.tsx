@@ -4,27 +4,22 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  XIcon,
-  ThreadsIcon,
   GitHubIcon,
-  FigmaIcon,
-  DribbbleIcon,
+  LinkedInIcon,
   InstagramIcon,
   MailIcon,
   CopyIcon,
 } from "@/components/icons";
+import { profile } from "@/data/profile";
 
 function formatClock(date: Date) {
   return date.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
 }
 
 const socials = [
-  { label: "X.com", href: "https://x.com/justinmfarrugia", Icon: XIcon },
-  { label: "Threads", href: "https://threads.net/zuck", Icon: ThreadsIcon },
-  { label: "GitHub", href: "https://github.com", Icon: GitHubIcon },
-  { label: "Figma", href: "https://figma.com", Icon: FigmaIcon },
-  { label: "Dribbble", href: "https://dribbble.com", Icon: DribbbleIcon },
-  { label: "Instagram", href: "https://instagram.com", Icon: InstagramIcon },
+  { label: "LinkedIn", href: profile.linkedin, Icon: LinkedInIcon },
+  { label: "GitHub", href: profile.github, Icon: GitHubIcon },
+  { label: "Instagram", href: profile.instagram, Icon: InstagramIcon },
 ];
 
 export function Hero() {
@@ -37,7 +32,7 @@ export function Hero() {
   }, []);
 
   function handleCopy() {
-    navigator.clipboard?.writeText("dean@alpha.com");
+    navigator.clipboard?.writeText(profile.email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }
@@ -49,19 +44,19 @@ export function Hero() {
       </time>
 
       <Image
-        src="/images/avatar.png"
-        alt="Dean Smith"
+        src={profile.avatar}
+        alt={profile.displayName}
         width={72}
         height={72}
         priority
         className="mb-4 h-[72px] w-[72px] rounded-full object-cover"
       />
 
-      <h1 className="text-2xl font-normal text-white">Dean Smith</h1>
-      <p className="mt-2 text-xl text-[#a0a0a0]">Head of design at Alpha</p>
+      <h1 className="text-2xl font-normal text-white">{profile.displayName}</h1>
+      <p className="mt-2 text-xl text-[#a0a0a0] max-w-[480px]">{profile.headline}</p>
       <p className="mt-5 flex items-center gap-2 text-[15px] text-[#a0a0a0]">
         <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#2bd67b]" />
-        Available for new opportunities
+        {profile.availability}
       </p>
 
       <div className="mt-7 flex items-center gap-7">
@@ -102,7 +97,7 @@ export function Hero() {
       </div>
 
       <p className="mt-6 font-mono text-[13px] tracking-[0.6px] text-[#707070]">
-        NYC, USA · 40.6892° N, 74.0445° W
+        RS, BRASIL · 29.6842° S, 53.8069° W
       </p>
     </header>
   );
