@@ -99,7 +99,7 @@ T8 -> T9
 **Tests**: integration
 **Gate**: full
 
-#### T9: End-to-end verification and visual regression testing
+#### T9: End-to-end verification and visual regression testing [DONE]
 **What**: Run Vitest test suite, typecheck, build, and browser-harness visual check.
 **Where**: `tests/`
 **Depends on**: T8

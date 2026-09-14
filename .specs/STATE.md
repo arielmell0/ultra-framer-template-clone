@@ -23,10 +23,11 @@
 ## Handoff
 
 - **Feature**: ariel-portfolio
-- **Phase / Task**: Phase 1 / T1 - In Progress
-- **Completed**: None
-- **In-progress** (file:line): `src/data/profile.ts`
-- **Next step**: Implement T1 (profile data module and unit tests)
+- **Phase / Task**: Phase 2 / T9 - Complete
+- **Completed**: T1 (Profile data), T2 (Hero & About), T3 (About page experience/education), T4 (Stack subpage), T5 (Contact page), T6 (Projects data & prints), T7 (Work section & redirects), T8 (Work detail gallery), T9 (E2E verification & visual testing)
+- **In-progress** (file:line): None
+- **Next step**: None (feature completed and verified)
 - **Blockers**: none
-- **Uncommitted files**: vitest.config.ts, package.json, public/images/ariel-avatar.jpg, public/images/projects/, .specs/
+- **Uncommitted files**: none
 - **Branch**: master
+
