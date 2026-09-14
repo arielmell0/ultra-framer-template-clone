@@ -62,3 +62,229 @@ export function VSCodeAppIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function NodeIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <path
+        d="M32 4L56 18V46L32 60L8 46V18L32 4Z"
+        fill="#5FA04E"
+      />
+      <path
+        d="M32 10L50 20.5V41.5L32 52L14 41.5V20.5L32 10Z"
+        fill="#215732"
+      />
+      <path
+        d="M26 25V39M26 29L38 39V25"
+        stroke="#FFFFFF"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function TypeScriptIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <rect width="64" height="64" rx="12" fill="#3178C6" />
+      <path
+        d="M17 26H35M26 26V46"
+        stroke="#FFFFFF"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M48 29C48 27.34 46.66 26 44 26C40 26 38 28.5 38 31.5C38 36.5 48 35.5 48 41C48 44 45.5 46 42 46C38 46 36.5 43.5 36.5 41"
+        stroke="#FFFFFF"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ReactIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <ellipse
+        cx="32"
+        cy="32"
+        rx="26"
+        ry="10"
+        stroke="#61DAFB"
+        strokeWidth="2.5"
+      />
+      <ellipse
+        cx="32"
+        cy="32"
+        rx="26"
+        ry="10"
+        transform="rotate(60 32 32)"
+        stroke="#61DAFB"
+        strokeWidth="2.5"
+      />
+      <ellipse
+        cx="32"
+        cy="32"
+        rx="26"
+        ry="10"
+        transform="rotate(120 32 32)"
+        stroke="#61DAFB"
+        strokeWidth="2.5"
+      />
+      <circle cx="32" cy="32" r="4.5" fill="#61DAFB" />
+    </svg>
+  );
+}
+
+export function NextIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <circle cx="32" cy="32" r="30" fill="#000000" stroke="#333333" strokeWidth="2" />
+      <path
+        d="M23 44V20H28L41.5 42M41.5 20V32"
+        stroke="#FFFFFF"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ReactNativeIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <rect x="18" y="8" width="28" height="48" rx="6" stroke="#4a4a4a" strokeWidth="2" fill="#1e1e1e" />
+      <ellipse
+        cx="32"
+        cy="32"
+        rx="15"
+        ry="6"
+        stroke="#61DAFB"
+        strokeWidth="1.8"
+      />
+      <ellipse
+        cx="32"
+        cy="32"
+        rx="15"
+        ry="6"
+        transform="rotate(60 32 32)"
+        stroke="#61DAFB"
+        strokeWidth="1.8"
+      />
+      <ellipse
+        cx="32"
+        cy="32"
+        rx="15"
+        ry="6"
+        transform="rotate(120 32 32)"
+        stroke="#61DAFB"
+        strokeWidth="1.8"
+      />
+      <circle cx="32" cy="32" r="2.5" fill="#61DAFB" />
+      <circle cx="32" cy="50" r="1.5" fill="#666666" />
+    </svg>
+  );
+}
+
+export function AWSIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <path
+        d="M19 28L13 40H17L18.5 37H23.5L25 40H29L23 28H19ZM20 30.5L22.5 34.5H19.5L20 30.5Z"
+        fill="#EDEDED"
+      />
+      <path
+        d="M29 32L32 40H35L38 32H35L33.5 37L32 32H29Z"
+        fill="#EDEDED"
+      />
+      <path
+        d="M48 31C46 30 43 30 41 31.5C39.5 32.5 39 34 40.5 35.5C42 37 46.5 36.5 46.5 38.5C46.5 39.5 45 40.5 43 40C41.5 39.5 40.5 38.5 39.5 37.5L38 39.5C39.5 41 41.5 42 43.5 42C47.5 42 49.5 40 49.5 38C49.5 34.5 44 34.5 44 33C44 32 45.5 31.5 47 32.5L48 31Z"
+        fill="#EDEDED"
+      />
+      <path
+        d="M14 46C24 51 40 51 50 44"
+        stroke="#FF9900"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M47 43L51 44L49 48"
+        stroke="#FF9900"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function MongoDBIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <path
+        d="M32 6C32 6 20 22 20 36C20 45 25 52 32 58C39 52 44 45 44 36C44 22 32 6 32 6Z"
+        fill="#13AA52"
+      />
+      <path
+        d="M32 6V58C39 52 44 45 44 36C44 22 32 6 32 6Z"
+        fill="#00ED64"
+      />
+      <path
+        d="M32 16V52"
+        stroke="#FFFFFF"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function PostgreSQLIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <rect width="64" height="64" rx="12" fill="#336791" />
+      <path
+        d="M32 14C23.5 14 18 20 18 27C18 35 24 40 28 42V48C28 49 29 50 30 50H34C35 50 36 49 36 48V42C40 40 46 35 46 27C46 20 40.5 14 32 14Z"
+        fill="#FFFFFF"
+      />
+      <path
+        d="M25 28C25 24 28 21 32 21C36 21 39 24 39 28C39 31 37 34 34 35V39H30V35C27 34 25 31 25 28Z"
+        fill="#336791"
+      />
+    </svg>
+  );
+}
+
+export function LangChainIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <rect width="64" height="64" rx="12" fill="#1C3C3C" />
+      <circle cx="26" cy="32" r="10" stroke="#00A67E" strokeWidth="4" />
+      <circle cx="38" cy="32" r="10" stroke="#22C55E" strokeWidth="4" />
+      <path d="M26 32H38" stroke="#FFFFFF" strokeWidth="3" />
+    </svg>
+  );
+}
+
+export function GitIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" {...props}>
+      <rect width="64" height="64" rx="12" fill="#F05032" />
+      <path
+        d="M24 20V44M40 28V36M40 28C40 23.5 32 23.5 32 28V44"
+        stroke="#FFFFFF"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+      />
+      <circle cx="24" cy="20" r="4" fill="#FFFFFF" />
+      <circle cx="24" cy="44" r="4" fill="#FFFFFF" />
+      <circle cx="40" cy="28" r="4" fill="#FFFFFF" />
+    </svg>
+  );
+}

@@ -62,7 +62,7 @@ T8 -> T9
 **Tests**: unit
 **Gate**: quick
 
-#### T4: Update Stack subpage with Ariel's Tech & Hardware
+#### T4: Update Stack subpage with Ariel's Tech & Hardware [DONE]
 **What**: Update /stack with Ariel's software stack (Node, TS, React, Next, React Native, AWS, Mongo, Postgres, LangChain, Git) and physical hardware.
 **Where**: `src/app/stack/page.tsx`
 **Depends on**: T3

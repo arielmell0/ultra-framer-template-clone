@@ -1,34 +1,34 @@
 import Image from "next/image";
 import { LeftRailNav } from "@/components/LeftRailNav";
 import { Footer } from "@/components/Footer";
+import { profile } from "@/data/profile";
 import {
-  ArcIcon,
-  ChatGPTIcon,
-  SpotifyIcon,
-  RaycastIcon,
-  FramerIcon,
-  FigmaAppIcon,
+  NodeIcon,
+  TypeScriptIcon,
+  ReactIcon,
+  NextIcon,
+  ReactNativeIcon,
+  AWSIcon,
+  MongoDBIcon,
+  PostgreSQLIcon,
+  LangChainIcon,
+  GitIcon,
   VSCodeAppIcon,
 } from "@/components/StackIcons";
 
-const softwareList = [
-  { name: "Arc", tag: "BROWSER", Icon: ArcIcon },
-  { name: "ChatGPT", tag: "AI", Icon: ChatGPTIcon },
-  { name: "Spotify", tag: "MUSIC", Icon: SpotifyIcon },
-  { name: "Raycast", tag: "PRODUCTIVITY", Icon: RaycastIcon },
-  { name: "Framer", tag: "DESIGN", Icon: FramerIcon },
-  { name: "Figma", tag: "DESIGN", Icon: FigmaAppIcon },
-  { name: "VSCode", tag: "CODE", Icon: VSCodeAppIcon },
-  { name: "Things", tag: "PRODUCTIVITY", image: "/images/stack-things.png" },
-  { name: "Amie", tag: "PRODUCTIVITY", image: "/images/stack-amie.png" },
-];
-
-const physicalList = [
-  { name: "Studio Display", tag: "SCREEN", image: "/images/stack-studio-display.png" },
-  { name: "Magic Keyboard", tag: "KEYBOARD", image: "/images/stack-keyboard.png" },
-  { name: "Logitech BRIO", tag: "WEBCAM", image: "/images/stack-brio.png" },
-  { name: "Macbook Pro 14” M2", tag: "LAPTOP", image: "/images/stack-macbook.png" },
-];
+const iconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+  Node: NodeIcon,
+  TypeScript: TypeScriptIcon,
+  React: ReactIcon,
+  Next: NextIcon,
+  ReactNative: ReactNativeIcon,
+  AWS: AWSIcon,
+  MongoDB: MongoDBIcon,
+  PostgreSQL: PostgreSQLIcon,
+  LangChain: LangChainIcon,
+  Git: GitIcon,
+  VSCode: VSCodeAppIcon,
+};
 
 export default function StackPage() {
   return (
@@ -46,34 +46,29 @@ export default function StackPage() {
             Software
           </h2>
           <div className="grid grid-cols-3 gap-3 w-full">
-            {softwareList.map((item) => (
-              <div
-                key={item.name}
-                className="flex h-[230px] flex-col justify-between rounded-xl bg-[#282828] p-3 transition hover:bg-[#2e2e2e]"
-              >
-                <div className="flex flex-1 items-center justify-center">
-                  {item.Icon ? (
-                    <item.Icon className="h-14 w-14 object-contain text-[#ededed]" />
-                  ) : item.image ? (
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      width={56}
-                      height={56}
-                      className="h-14 w-14 rounded-xl object-contain"
-                    />
-                  ) : null}
+            {profile.software.map((item) => {
+              const Icon = iconMap[item.iconName];
+              return (
+                <div
+                  key={item.name}
+                  className="flex h-[230px] flex-col justify-between rounded-xl bg-[#282828] p-3 transition hover:bg-[#2e2e2e]"
+                >
+                  <div className="flex flex-1 items-center justify-center">
+                    {Icon ? (
+                      <Icon className="h-14 w-14 object-contain text-[#ededed]" />
+                    ) : null}
+                  </div>
+                  <div>
+                    <p className="text-[12px] uppercase tracking-wider text-[#a0a0a0]">
+                      {item.category}
+                    </p>
+                    <p className="text-[15px] font-normal text-[#ededed] mt-0.5">
+                      {item.name}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-[12px] uppercase tracking-wider text-[#a0a0a0]">
-                    {item.tag}
-                  </p>
-                  <p className="text-[15px] font-normal text-[#ededed] mt-0.5">
-                    {item.name}
-                  </p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
@@ -104,7 +99,7 @@ export default function StackPage() {
             Physical
           </h2>
           <div className="grid grid-cols-2 gap-3 w-full">
-            {physicalList.map((item) => (
+            {profile.physical.map((item) => (
               <div
                 key={item.name}
                 className="flex h-[230px] flex-col justify-between rounded-xl bg-[#282828] p-3 transition hover:bg-[#2e2e2e]"
@@ -120,7 +115,7 @@ export default function StackPage() {
                 </div>
                 <div>
                   <p className="text-[12px] uppercase tracking-wider text-[#a0a0a0]">
-                    {item.tag}
+                    {item.category}
                   </p>
                   <p className="text-[15px] font-normal text-[#ededed] mt-0.5">
                     {item.name}
