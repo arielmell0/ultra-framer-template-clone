@@ -54,7 +54,7 @@ T7 -> T8
 **Tests**: unit
 **Gate**: quick
 
-#### T3: Update projects unit test suite to assert all 9 projects and prints
+#### T3: Update projects unit test suite to assert all 9 projects and prints [DONE]
 **What**: Update src/data/projects.test.ts to test all separated projects, their prints count, and required fields.
 **Where**: `src/data/projects.test.ts`
 **Depends on**: T2
