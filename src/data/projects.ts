@@ -27,7 +27,7 @@ export const projects: Project[] = [
     role: "Lead Full Stack Developer",
     outcome:
       "Engineered a mission-critical internal CRM using React-Admin and FeathersJS microservices, empowering operations teams to curate thousands of creator stories daily, manage creator profiles, verify brand safety, and orchestrate payout disbursements.",
-    logo: "/images/logo-alpha.png",
+    logo: "/images/infleux-favicon.png",
     cover: "/project-prints/infleux/admin%20app/1.%20influencers-stories-curatorship-system.png",
     prints: [
       {
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
     outcome:
       "Architected a self-service advertiser portal in Next.js and Node.js enabling brands to launch targeted influencer marketing campaigns, configure multi-model payout structures (CPC, CPA, CPI), and track live campaign ROI and conversion attribution.",
-    logo: "/images/logo-beta.png",
+    logo: "/images/infleux-favicon.png",
     cover: "/project-prints/infleux/advertisers/1.%20adv%20web%20dashboard.png",
     prints: [
       {
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
     outcome:
       "Created a dedicated agency management portal (Web & Mobile) empowering talent agents and assessors to manage their creator rosters, discover matched brand campaigns, and dispatch push alerts to boost creator participation.",
-    logo: "/images/logo-gamma.png",
+    logo: "/images/infleux-favicon.png",
     cover: "/project-prints/infleux/agencies/1.%20asessor%20app%20web%20-%20list%20your%20influencers.png",
     prints: [
       {
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     role: "Mobile & Backend Developer",
     outcome:
       "Delivered a high-retention React Native mobile app for iOS and Android, providing thousands of influencers with a seamless marketplace to browse campaigns, access creative briefings, and track real-time earnings from performance marketing (CPC, CPA, CPI).",
-    logo: "/images/logo-alpha.png",
+    logo: "/images/infleux-favicon.png",
     cover: "/project-prints/infleux/app-loja/1.home.png",
     prints: [
       {
@@ -177,7 +177,7 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
     outcome:
       "Constructed a responsive, brand-aligned web companion for the influencer platform, enabling creators and agency managers to access campaigns, inspect briefings, and analyze revenue analytics on desktop and mobile web.",
-    logo: "/images/logo-beta.png",
+    logo: "/images/infleux-favicon.png",
     cover: "/project-prints/infleux/influencer-web/4.%20web%20desktop%20-%20influencer%20dashboard.png",
     prints: [
       {
@@ -217,7 +217,7 @@ export const projects: Project[] = [
     role: "Full Stack Developer & Product Architect",
     outcome:
       "Conceived and built a dedicated fiscal collaboration platform that solved invoice chaos for creators and CPAs, enabling one-click email invitations, automated invoice data requests, and transparent tax compliance tracking.",
-    logo: "/images/logo-gamma.png",
+    logo: "/images/infleux-favicon.png",
     cover: "/project-prints/infleux/nfs/1.%20web%20mobile%20influencer%20view%20-%20home.png",
     prints: [
       {

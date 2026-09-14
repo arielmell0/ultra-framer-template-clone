@@ -22,7 +22,7 @@ export function Work() {
                 alt=""
                 width={24}
                 height={24}
-                className="h-6 w-6 shrink-0 rounded-[10px] object-cover"
+                className="h-6 w-6 shrink-0 rounded-[6px] object-contain"
               />
               <h3 className="text-[15px] font-normal text-[#ededed]">
                 {project.title}

@@ -50,6 +50,8 @@ describe("projects data", () => {
         expect(print.src).toContain("/project-prints/infleux/");
         expect(print.caption.length).toBeGreaterThan(10);
       }
+
+      expect(project?.logo).toBe("/images/infleux-favicon.png");
     }
   });
 });
