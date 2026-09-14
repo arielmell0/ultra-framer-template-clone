@@ -87,7 +87,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T7: Build Writing listing page
+#### T7: Build Writing listing page [DONE]
 **What**: Implement /writing route displaying all 3 article cards with category tags and dates.
 **Where**: `src/app/writing/page.tsx`
 **Depends on**: T6

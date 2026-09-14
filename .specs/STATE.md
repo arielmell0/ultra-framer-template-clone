@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 2 / T7 - Build Writing listing page
-- **Completed**: T1, T2, T3, T4, T5, T6
-- **In-progress** (file:line): src/app/writing/page.tsx
-- **Next step**: Implement /writing listing route displaying all 3 article cards with category tags and dates
+- **Phase / Task**: Phase 2 / T8 - Build Writing article detail page
+- **Completed**: T1, T2, T3, T4, T5, T6, T7
+- **In-progress** (file:line): src/app/writing/[slug]/page.tsx
+- **Next step**: Implement /writing/[slug] route with cover image, title, tag, date, article text, and up next section
 - **Blockers**: none
-- **Uncommitted files**: src/app/work/[slug]/, .specs/
+- **Uncommitted files**: src/data/articles.ts, src/app/writing/, .specs/
 - **Branch**: master
