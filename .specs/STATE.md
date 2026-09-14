@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 2 / T9 - Build Store product listing page
-- **Completed**: T1, T2, T3, T4, T5, T6, T7, T8
-- **In-progress** (file:line): src/app/store/page.tsx
-- **Next step**: Implement /store listing route displaying all 3 products with prices and descriptions
+- **Phase / Task**: Phase 2 / T10 - Build Store product detail page
+- **Completed**: T1, T2, T3, T4, T5, T6, T7, T8, T9
+- **In-progress** (file:line): src/app/store/[slug]/page.tsx
+- **Next step**: Implement /store/[slug] dynamic route with hero, pricing, badges, buy/preview actions, and features
 - **Blockers**: none
-- **Uncommitted files**: src/app/writing/[slug]/, .specs/
+- **Uncommitted files**: src/data/products.ts, src/app/store/, .specs/
 - **Branch**: master

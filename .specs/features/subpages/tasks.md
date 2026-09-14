@@ -101,7 +101,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T9: Build Store product listing page
+#### T9: Build Store product listing page [DONE]
 **What**: Implement /store route displaying all 3 products with prices and descriptions.
 **Where**: `src/app/store/page.tsx`
 **Depends on**: T8
