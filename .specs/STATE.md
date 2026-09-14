@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 1 / T5 - Build Work listing page
-- **Completed**: T1, T2, T3, T4
-- **In-progress** (file:line): src/app/work/page.tsx
-- **Next step**: Implement /work listing route displaying all 3 project cards with links to /work/[slug]
+- **Phase / Task**: Phase 2 / T6 - Build Work project detail page
+- **Completed**: T1, T2, T3, T4, T5
+- **In-progress** (file:line): src/app/work/[slug]/page.tsx
+- **Next step**: Implement /work/[slug] dynamic route displaying project cover, client, timeline, role, outcome, and case study
 - **Blockers**: none
-- **Uncommitted files**: src/app/contact/, .specs/
+- **Uncommitted files**: src/data/projects.ts, src/app/work/, .specs/
 - **Branch**: master

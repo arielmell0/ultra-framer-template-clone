@@ -71,7 +71,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T5: Build Work listing page
+#### T5: Build Work listing page [DONE]
 **What**: Implement /work route displaying all 3 project cards with links to /work/[slug].
 **Where**: `src/app/work/page.tsx`
 **Depends on**: T4
