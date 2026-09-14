@@ -1,6 +1,7 @@
 export interface Project {
   slug: string;
   title: string;
+  subtitle?: string;
   client: string;
   timeline: string;
   role: string;
@@ -14,6 +15,7 @@ export const projects: Project[] = [
   {
     slug: "redesigning-gamma",
     title: "Redesigning Gamma",
+    subtitle: "An end to end redesign of an e-commerce platform",
     client: "Alpha",
     timeline: "Jan 23 – Mar 23",
     role: "Product Designer",
@@ -32,6 +34,7 @@ export const projects: Project[] = [
   {
     slug: "building-a-design-system-for-beta",
     title: "Building a design system for Beta",
+    subtitle: "Going from 0 -> 1 to enable product experiences at scale",
     client: "Beta",
     timeline: "Dec 22 – Feb 23",
     role: "Design Systems Lead",
@@ -49,6 +52,7 @@ export const projects: Project[] = [
   {
     slug: "new-mobile-app-for-alpha",
     title: "New mobile app for Alpha",
+    subtitle: "Translating e-commerce into a fully native experience",
     client: "Alpha",
     timeline: "Jan 22 – Jul 22",
     role: "Product Designer & User Researcher",

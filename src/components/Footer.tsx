@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="py-16 text-center text-[13px] text-[#707070]">
+    <footer className="pt-4 pb-8 text-center text-[15px] text-[#707070] flex flex-col items-center gap-3">
       <p>
         © 2025 Ultra by{" "}
         <a
@@ -12,7 +12,7 @@ export function Footer() {
           @justinmfarrugia
         </a>
       </p>
-      <p className="mt-2 flex items-center justify-center gap-2 text-xs">
+      <div className="flex items-center justify-center gap-4 text-[15px]">
         <a
           href="https://jusfar.lemonsqueezy.com/affiliates"
           target="_blank"
@@ -30,7 +30,7 @@ export function Footer() {
         >
           Purchase template
         </a>
-      </p>
+      </div>
     </footer>
   );
 }

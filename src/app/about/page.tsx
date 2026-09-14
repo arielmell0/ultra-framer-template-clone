@@ -19,7 +19,7 @@ const experience = [
 const education = [
   {
     period: "2008 — Now",
-    desc: "Continued education in design and technology, including attending various conferences, workshops, and courses.",
+    desc: "Continued education in design and technology, including attending various conferences and workshops to stay up-to-date on industry trends and best practices.",
   },
   {
     period: "2004 — 2008",
@@ -31,11 +31,17 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#232323] text-[#ededed]">
       <LeftRailNav />
-      <main className="mx-auto max-w-[540px] px-6 pl-[152px] pt-14">
-        <header className="mb-10">
+      <main className="w-full max-w-[540px] mx-auto px-4 md:px-0 py-10 flex flex-col gap-10">
+        <header>
           <h1 className="text-2xl font-normal text-white">About</h1>
           <p className="mt-2 text-xl text-[#707070]">A few things you should know</p>
-          <div className="mt-8 overflow-hidden rounded-xl">
+        </header>
+
+        <section className="relative w-full">
+          <h2 className="text-[15px] font-normal text-[#a0a0a0] mb-4 md:mb-0 md:absolute md:right-[calc(100%+40px)] md:top-0 md:text-right whitespace-nowrap">
+            Intro
+          </h2>
+          <div className="overflow-hidden rounded-xl mb-6">
             <Image
               src="/images/about-photo.png"
               alt="Dean Smith"
@@ -45,20 +51,18 @@ export default function AboutPage() {
               className="h-auto w-full object-cover"
             />
           </div>
-        </header>
-
-        <section className="grid grid-cols-[auto_1fr] gap-x-10 gap-y-4 py-8 border-t border-[#2e2e2e]">
-          <h2 className="pt-1 text-[15px] text-[#a0a0a0] w-24 shrink-0">Intro</h2>
-          <div className="space-y-4 text-[15px] leading-[1.5] text-[#ededed]">
+          <div className="space-y-4 text-[15px] leading-[22.5px] text-[#ededed] w-full">
             {introParagraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>
         </section>
 
-        <section className="grid grid-cols-[auto_1fr] gap-x-10 gap-y-4 py-8 border-t border-[#2e2e2e]">
-          <h2 className="pt-1 text-[15px] text-[#a0a0a0] w-24 shrink-0">Experience</h2>
-          <div className="space-y-4">
+        <section className="relative w-full">
+          <h2 className="text-[15px] font-normal text-[#a0a0a0] mb-4 md:mb-0 md:absolute md:right-[calc(100%+40px)] md:top-0 md:text-right whitespace-nowrap">
+            Experience
+          </h2>
+          <div className="space-y-4 w-full">
             {experience.map((item, i) => (
               <div key={i} className="flex items-baseline gap-4 text-[15px]">
                 <span className="w-28 shrink-0 text-[#707070]">{item.period}</span>
@@ -68,13 +72,15 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="grid grid-cols-[auto_1fr] gap-x-10 gap-y-4 py-8 border-t border-[#2e2e2e]">
-          <h2 className="pt-1 text-[15px] text-[#a0a0a0] w-24 shrink-0">Education</h2>
-          <div className="space-y-4">
+        <section className="relative w-full">
+          <h2 className="text-[15px] font-normal text-[#a0a0a0] mb-4 md:mb-0 md:absolute md:right-[calc(100%+40px)] md:top-0 md:text-right whitespace-nowrap">
+            Education
+          </h2>
+          <div className="space-y-4 w-full">
             {education.map((item, i) => (
               <div key={i} className="flex items-baseline gap-4 text-[15px]">
                 <span className="w-28 shrink-0 text-[#707070]">{item.period}</span>
-                <span className="text-[#ededed] leading-[1.5]">{item.desc}</span>
+                <span className="text-[#ededed] leading-[22.5px]">{item.desc}</span>
               </div>
             ))}
           </div>

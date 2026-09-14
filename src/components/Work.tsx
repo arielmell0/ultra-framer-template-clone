@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRightIcon } from "@/components/icons";
 import { projects } from "@/data/projects";
 
 export function Work() {
   return (
-    <section className="grid grid-cols-[auto_1fr] gap-x-10 gap-y-4 py-10">
-      <h2 className="pt-1 text-[15px] text-[#a0a0a0]">Work</h2>
-      <div className="flex flex-col gap-4">
+    <section className="relative w-full">
+      <h2 className="text-[15px] font-normal text-[#a0a0a0] mb-4 md:mb-0 md:absolute md:right-[calc(100%+40px)] md:top-0 md:text-right whitespace-nowrap">
+        Work
+      </h2>
+      <div className="flex flex-col gap-4 w-full">
         {projects.map((project) => (
           <Link
             key={project.title}
@@ -35,10 +38,11 @@ export function Work() {
           </Link>
         ))}
         <Link
-          href="/work"
-          className="inline-flex h-[38px] w-full items-center justify-center rounded-lg bg-[#282828] text-[15px] text-[#ededed] transition hover:bg-[#2e2e2e]"
+          href="/work/new-mobile-app-for-alpha"
+          className="inline-flex h-[38px] w-full items-center justify-center gap-2 rounded-lg bg-[#282828] text-[15px] text-[#ededed] transition hover:bg-[#2e2e2e]"
         >
-          View all
+          <span>View all</span>
+          <ArrowRightIcon className="h-3 w-3 text-[#ededed]" />
         </Link>
       </div>
     </section>

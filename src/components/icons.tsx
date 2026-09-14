@@ -191,3 +191,33 @@ export function SearchIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function CopyIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" {...props}>
+      <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M4 13V5C4 3.89543 4.89543 3 6 3H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function ArrowRightIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 12 12" fill="none" {...props}>
+      <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function EnvelopeLargeIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" {...props}>
+      <path
+        d="M 27.962 10.666 L 19.929 16.942 C 18.523 18.035 17.682 18.582 16.751 18.792 C 15.93 18.977 15.07 18.977 14.249 18.792 C 13.318 18.582 12.477 18.035 11.071 16.942 L 3.038 10.666 M 9.4 25.333 L 20.6 25.333 C 22.84 25.333 23.96 25.333 24.816 24.896 C 25.568 24.512 26.181 23.9 26.563 23.149 C 27 22.293 27 21.173 27 18.933 L 27 13.067 C 27 10.827 27 9.707 26.563 8.851 C 26.181 8.099 25.568 7.487 24.816 7.104 C 23.96 6.667 22.84 6.667 20.6 6.667 L 9.4 6.667 C 7.16 6.667 6.04 6.667 5.184 7.104 C 4.432 7.487 3.819 8.099 3.437 8.851 C 3 9.707 3 10.827 3 13.067 L 3 18.933 C 3 21.173 3 22.293 3.437 23.149 C 3.819 23.9 4.432 24.512 5.184 24.896 C 6.04 25.333 7.16 25.333 9.4 25.333 Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+}
+

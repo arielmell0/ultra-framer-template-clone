@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { LeftRailNav } from "@/components/LeftRailNav";
+import { SubpageSidebar } from "@/components/SubpageSidebar";
 import { Footer } from "@/components/Footer";
 import { projects } from "@/data/projects";
 
@@ -20,51 +21,80 @@ export default async function ProjectDetailPage({ params }: Props) {
     notFound();
   }
 
+  const nextProjects = projects.filter((p) => p.slug !== slug);
+
   return (
-    <div className="min-h-screen bg-[#232323] text-[#ededed]">
+    <div className="min-h-screen bg-[#232323] text-[#ededed] flex">
       <LeftRailNav />
-      <main className="mx-auto max-w-[540px] px-6 pl-[152px] pt-14">
-        <div className="overflow-hidden rounded-xl">
-          <Image
-            src={project.cover}
-            alt={project.title}
-            width={540}
-            height={300}
-            priority
-            className="h-auto w-full object-cover"
-          />
+      {/* Spacer for 65px LeftRailNav on desktop */}
+      <div className="w-[65px] shrink-0 hidden lg:block" />
+
+      {/* Secondary master-detail sidebar */}
+      <SubpageSidebar
+        sectionTitle="Work"
+        activeItem={{
+          slug: project.slug,
+          title: project.title,
+          subtitle: project.subtitle,
+          href: `/work/${project.slug}`,
+        }}
+        nextItems={nextProjects.map((p) => ({
+          slug: p.slug,
+          title: p.title,
+          subtitle: p.subtitle,
+          href: `/work/${p.slug}`,
+        }))}
+      />
+
+      {/* Main detail reading area */}
+      <main className="flex-1 min-w-0 py-10 px-4 md:px-0">
+        <div className="w-full max-w-[540px] mx-auto flex flex-col gap-10">
+          {/* Cover image (280px height) */}
+          <div className="overflow-hidden rounded-xl bg-[#282828]">
+            <Image
+              src={project.cover}
+              alt={project.title}
+              width={540}
+              height={280}
+              priority
+              className="h-[280px] w-full object-cover"
+            />
+          </div>
+
+          {/* Title */}
+          <header>
+            <h1 className="text-2xl font-normal text-[#ededed]">{project.title}</h1>
+          </header>
+
+          {/* Metadata */}
+          <section className="flex flex-col gap-2 text-[15px]">
+            <div className="flex gap-x-6">
+              <span className="w-20 shrink-0 text-[#707070]">Client</span>
+              <span className="text-[#ededed]">{project.client}</span>
+            </div>
+            <div className="flex gap-x-6">
+              <span className="w-20 shrink-0 text-[#707070]">Timeline</span>
+              <span className="text-[#ededed]">{project.timeline}</span>
+            </div>
+            <div className="flex gap-x-6">
+              <span className="w-20 shrink-0 text-[#707070]">Role</span>
+              <span className="text-[#ededed]">{project.role}</span>
+            </div>
+            <div className="flex gap-x-6">
+              <span className="w-20 shrink-0 text-[#707070]">Outcome</span>
+              <span className="text-[#ededed] leading-[22.5px]">{project.outcome}</span>
+            </div>
+          </section>
+
+          {/* Description paragraphs */}
+          <section className="flex flex-col gap-5 text-[15px] leading-[22.5px] text-[#ededed]">
+            {project.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </section>
+
+          <Footer />
         </div>
-
-        <header className="mt-8 mb-8">
-          <h1 className="text-2xl font-normal text-white">{project.title}</h1>
-        </header>
-
-        <section className="space-y-4 border-t border-[#2e2e2e] py-8 text-[15px]">
-          <div className="grid grid-cols-[auto_1fr] gap-x-10">
-            <span className="w-24 shrink-0 text-[#a0a0a0]">Client</span>
-            <span className="text-[#ededed]">{project.client}</span>
-          </div>
-          <div className="grid grid-cols-[auto_1fr] gap-x-10">
-            <span className="w-24 shrink-0 text-[#a0a0a0]">Timeline</span>
-            <span className="text-[#ededed]">{project.timeline}</span>
-          </div>
-          <div className="grid grid-cols-[auto_1fr] gap-x-10">
-            <span className="w-24 shrink-0 text-[#a0a0a0]">Role</span>
-            <span className="text-[#ededed]">{project.role}</span>
-          </div>
-          <div className="grid grid-cols-[auto_1fr] gap-x-10">
-            <span className="w-24 shrink-0 text-[#a0a0a0]">Outcome</span>
-            <span className="text-[#ededed] leading-[1.5]">{project.outcome}</span>
-          </div>
-        </section>
-
-        <section className="space-y-4 border-t border-[#2e2e2e] py-8 text-[15px] leading-[1.6] text-[#ededed]">
-          {project.paragraphs.map((para, i) => (
-            <p key={i}>{para}</p>
-          ))}
-        </section>
-
-        <Footer />
       </main>
     </div>
   );

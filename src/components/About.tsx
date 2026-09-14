@@ -6,9 +6,11 @@ const paragraphs = [
 
 export function About() {
   return (
-    <section className="grid grid-cols-[auto_1fr] gap-x-10 gap-y-4 py-10">
-      <h2 className="pt-1 text-[15px] text-[#a0a0a0]">About</h2>
-      <div className="space-y-4 text-[15px] leading-[1.5] text-[#ededed]">
+    <section className="relative w-full">
+      <h2 className="text-[15px] font-normal text-[#a0a0a0] mb-4 md:mb-0 md:absolute md:right-[calc(100%+40px)] md:top-0 md:text-right whitespace-nowrap">
+        About
+      </h2>
+      <div className="space-y-4 text-[15px] leading-[22.5px] text-[#ededed]">
         {paragraphs.map((p) => (
           <p key={p}>{p}</p>
         ))}

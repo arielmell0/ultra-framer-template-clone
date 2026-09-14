@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { LeftRailNav } from "@/components/LeftRailNav";
 import { Footer } from "@/components/Footer";
+import { CopyIcon } from "@/components/icons";
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
@@ -22,34 +23,34 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-[#232323] text-[#ededed]">
       <LeftRailNav />
-      <main className="mx-auto max-w-[540px] px-6 pl-[152px] pt-14">
-        <header className="mb-8">
+      <main className="w-full max-w-[540px] mx-auto px-4 md:px-0 py-10 flex flex-col gap-8">
+        <header>
           <h1 className="text-2xl font-normal text-white">Contact</h1>
           <p className="mt-2 text-xl text-[#707070]">Let&apos;s talk about working together</p>
 
           <p className="mt-5 flex items-center gap-2 text-[15px] text-[#a0a0a0]">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#2bd67b]" />
             Available for new opportunities
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-2.5">
+          <div className="mt-7 flex items-center justify-center gap-3">
             <a
               href="https://cal.com/justinfarrugia/30min"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-[38px] items-center justify-center gap-2 rounded-lg bg-white px-4 text-[15px] font-medium text-[#161616] transition-colors hover:bg-zinc-200"
+              className="inline-flex h-[38px] w-[193px] items-center justify-center gap-2 rounded-lg bg-[#282828] text-[15px] font-medium text-[#ededed] transition-colors hover:bg-[#323232]"
             >
-              Book call
+              <span>Book call</span>
               <svg
-                width="16"
-                height="16"
+                width="14"
+                height="14"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-4 w-4"
+                className="h-3.5 w-3.5"
               >
                 <path d="M7 17l9.2-9.2M17 17V7H7" />
               </svg>
@@ -58,48 +59,49 @@ export default function ContactPage() {
             <button
               type="button"
               onClick={handleCopy}
-              className="inline-flex h-[38px] items-center justify-center rounded-lg bg-[#282828] px-4 text-[15px] font-medium text-[#ededed] transition-colors hover:bg-[#323232]"
+              className="inline-flex h-[38px] w-[193px] items-center justify-center gap-2 rounded-lg bg-[#282828] text-[15px] font-medium text-[#ededed] transition-colors hover:bg-[#323232] cursor-pointer"
             >
-              {copied ? "Copied!" : "Copy email"}
+              <span>{copied ? "Copied!" : "Copy email"}</span>
+              <CopyIcon className="h-4 w-4" />
             </button>
           </div>
         </header>
 
-        <section className="pt-4 border-t border-[#2e2e2e]">
+        <section className="w-full">
           {submitted ? (
-            <div className="rounded-xl bg-[#282828] p-6 text-center">
-              <p className="text-lg text-white">Message sent!</p>
-              <p className="mt-2 text-sm text-[#a0a0a0]">
+            <div className="rounded-xl bg-[#282828] p-8 text-center">
+              <p className="text-lg text-white font-medium">Message sent!</p>
+              <p className="mt-2 text-[15px] text-[#a0a0a0]">
                 Thanks for reaching out. We will get back to you shortly.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full">
               <input
                 type="text"
                 required
                 placeholder="Your name"
-                className="w-full rounded-lg bg-[#343434] p-4 text-[15px] text-[#ededed] placeholder-[#707070] outline-none transition focus:ring-1 focus:ring-zinc-400"
+                className="w-full rounded-xl bg-[#1f1f1f] p-4 text-[15px] text-[#ededed] placeholder-[#707070] outline-none border border-white/5 focus:border-white/10"
               />
               <input
                 type="email"
                 required
                 placeholder="Your email"
-                className="w-full rounded-lg bg-[#343434] p-4 text-[15px] text-[#ededed] placeholder-[#707070] outline-none transition focus:ring-1 focus:ring-zinc-400"
+                className="w-full rounded-xl bg-[#1f1f1f] p-4 text-[15px] text-[#ededed] placeholder-[#707070] outline-none border border-white/5 focus:border-white/10"
               />
               <textarea
                 required
                 rows={5}
                 placeholder="Your message"
-                className="w-full rounded-lg bg-[#343434] p-4 text-[15px] text-[#ededed] placeholder-[#707070] outline-none transition focus:ring-1 focus:ring-zinc-400 resize-y"
+                className="w-full rounded-xl bg-[#1f1f1f] p-4 text-[15px] text-[#ededed] placeholder-[#707070] outline-none border border-white/5 focus:border-white/10 resize-y"
               />
               <button
                 type="submit"
-                className="h-[53px] w-full rounded-lg bg-white text-[15px] font-medium text-[#161616] transition hover:bg-zinc-200 cursor-pointer"
+                className="h-[46px] w-full rounded-xl bg-white text-[15px] font-semibold text-[#161616] transition hover:bg-zinc-200 cursor-pointer mt-1"
               >
                 Send
               </button>
-              <p className="mt-2 text-center text-xs text-[#707070]">
+              <p className="mt-2 text-center text-[14px] text-[#707070]">
                 Around 3-5 hours to respond
               </p>
             </form>
