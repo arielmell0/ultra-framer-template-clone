@@ -3,9 +3,16 @@
 import { useState } from "react";
 import { EnvelopeLargeIcon } from "@/components/icons";
 
+// Set to true to re-enable the newsletter subscription section in the future
+const SHOW_NEWSLETTER = false;
+
 export function SubscribeSection() {
   const [email, setEmail] = useState("");
   const [joined, setJoined] = useState(false);
+
+  if (!SHOW_NEWSLETTER) {
+    return null;
+  }
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();

@@ -18,10 +18,12 @@ export default function Home() {
           <Hero />
           <About />
           <Work />
-          <StoreSection />
-          <WritingSection />
-          <SubscribeSection />
+          {/* Hidden sections (preserved for future use): */}
+          {/* <StoreSection /> */}
+          {/* <WritingSection /> */}
+          {/* <SubscribeSection /> */}
           <Footer />
+
         </main>
       </div>
     </div>

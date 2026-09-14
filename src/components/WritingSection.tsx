@@ -2,7 +2,13 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@/components/icons";
 import { articles } from "@/data/articles";
 
+// Set to true to re-enable the writing section on the home page in the future
+const SHOW_WRITING_SECTION = false;
+
 export function WritingSection() {
+  if (!SHOW_WRITING_SECTION) {
+    return null;
+  }
   return (
     <section className="relative w-full">
       <h2 className="text-[15px] font-normal text-[#a0a0a0] mb-4 md:mb-0 md:absolute md:right-[calc(100%+40px)] md:top-0 md:text-right whitespace-nowrap">

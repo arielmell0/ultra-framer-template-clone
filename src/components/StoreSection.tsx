@@ -3,7 +3,13 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@/components/icons";
 import { products } from "@/data/products";
 
+// Set to true to re-enable the store section on the home page in the future
+const SHOW_STORE_SECTION = false;
+
 export function StoreSection() {
+  if (!SHOW_STORE_SECTION) {
+    return null;
+  }
   return (
     <section className="relative w-full">
       <h2 className="text-[15px] font-normal text-[#a0a0a0] mb-4 md:mb-0 md:absolute md:right-[calc(100%+40px)] md:top-0 md:text-right whitespace-nowrap">

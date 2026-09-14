@@ -1,9 +1,12 @@
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { LeftRailNav } from "@/components/LeftRailNav";
 import { SubpageSidebar } from "@/components/SubpageSidebar";
 import { Footer } from "@/components/Footer";
 import { products } from "@/data/products";
+
+// Set to false to re-enable Store detail pages in the future
+const HIDE_STORE_PAGES = true;
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -14,12 +17,17 @@ export async function generateStaticParams() {
 }
 
 export default async function ProductDetailPage({ params }: Props) {
+  if (HIDE_STORE_PAGES) {
+    redirect("/");
+  }
+
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {
     notFound();
   }
+
 
   const nextProducts = products.filter((p) => p.slug !== slug);
 

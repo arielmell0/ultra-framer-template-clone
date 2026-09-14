@@ -1,9 +1,12 @@
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { LeftRailNav } from "@/components/LeftRailNav";
 import { SubpageSidebar } from "@/components/SubpageSidebar";
 import { Footer } from "@/components/Footer";
 import { articles } from "@/data/articles";
+
+// Set to false to re-enable Writing detail pages in the future
+const HIDE_WRITING_PAGES = true;
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -14,12 +17,17 @@ export async function generateStaticParams() {
 }
 
 export default async function ArticleDetailPage({ params }: Props) {
+  if (HIDE_WRITING_PAGES) {
+    redirect("/");
+  }
+
   const { slug } = await params;
   const article = articles.find((a) => a.slug === slug);
 
   if (!article) {
     notFound();
   }
+
 
   const nextArticles = articles.filter((a) => a.slug !== slug);
 
