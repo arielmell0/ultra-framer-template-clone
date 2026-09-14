@@ -1,25 +1,6 @@
 import Image from "next/image";
-
-const projects = [
-  {
-    title: "Redesigning Gamma",
-    href: "/work/redesigning-gamma",
-    logo: "/images/logo-gamma.png",
-    cover: "/images/work-gamma.jpg",
-  },
-  {
-    title: "Building a design system for Beta",
-    href: "/work/building-a-design-system-for-beta",
-    logo: "/images/logo-beta.png",
-    cover: "/images/work-beta.jpg",
-  },
-  {
-    title: "New mobile app for Alpha",
-    href: "/work/new-mobile-app-for-alpha",
-    logo: "/images/logo-alpha.png",
-    cover: "/images/work-alpha.jpg",
-  },
-];
+import Link from "next/link";
+import { projects } from "@/data/projects";
 
 export function Work() {
   return (
@@ -27,9 +8,9 @@ export function Work() {
       <h2 className="pt-1 text-[15px] text-[#a0a0a0]">Work</h2>
       <div className="flex flex-col gap-4">
         {projects.map((project) => (
-          <a
+          <Link
             key={project.title}
-            href={project.href}
+            href={`/work/${project.slug}`}
             className="block rounded-xl bg-[#282828] pt-3 px-2 pb-2 transition hover:bg-[#2e2e2e]"
           >
             <div className="mb-3 flex items-center gap-4 px-1">
@@ -46,19 +27,19 @@ export function Work() {
             </div>
             <Image
               src={project.cover}
-              alt=""
+              alt={project.title}
               width={524}
               height={260}
               className="h-[260px] w-full rounded-lg object-cover"
             />
-          </a>
+          </Link>
         ))}
-        <button
-          type="button"
+        <Link
+          href="/work"
           className="inline-flex h-[38px] w-full items-center justify-center rounded-lg bg-[#282828] text-[15px] text-[#ededed] transition hover:bg-[#2e2e2e]"
         >
           View all
-        </button>
+        </Link>
       </div>
     </section>
   );

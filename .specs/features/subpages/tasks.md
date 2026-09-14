@@ -115,7 +115,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T11: Configure route aliases and shared Footer
+#### T11: Configure route aliases and shared Footer [DONE]
 **What**: Configure route rewrites/redirects for /About, /Stack, /Contact and ensure shared Footer layout parity.
 **Where**: `next.config.ts`
 **Depends on**: T10
