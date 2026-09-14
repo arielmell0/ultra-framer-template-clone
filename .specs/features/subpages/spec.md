@@ -96,7 +96,7 @@ Each requirement gets a unique ID for tracking across design, tasks, and validat
 | SUB-06 | P1: Core Subpages Implementation | Tasks | Pending |
 | SUB-07 | P1: Core Subpages Implementation | Tasks | Pending |
 | SUB-08 | P2: Writing and Store Subpages | Tasks | Verified |
-| SUB-09 | P2: Writing and Store Subpages | Tasks | Pending |
+| SUB-09 | P2: Writing and Store Subpages | Tasks | Verified |
 | SUB-10 | P2: Writing and Store Subpages | Tasks | Pending |
 | SUB-11 | P2: Writing and Store Subpages | Tasks | Pending |
 

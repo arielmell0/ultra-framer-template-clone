@@ -94,7 +94,7 @@ T10 -> T11
 **Tests**: e2e
 **Gate**: full
 
-#### T8: Build Writing article detail page
+#### T8: Build Writing article detail page [DONE]
 **What**: Implement /writing/[slug] route with article header, cover image, category tag, narrative text, and sidebar.
 **Where**: `src/app/writing/[slug]/page.tsx`
 **Depends on**: T7

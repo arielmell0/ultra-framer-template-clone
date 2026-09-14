@@ -15,10 +15,10 @@
 ## Handoff
 
 - **Feature**: subpages
-- **Phase / Task**: Phase 2 / T8 - Build Writing article detail page
-- **Completed**: T1, T2, T3, T4, T5, T6, T7
-- **In-progress** (file:line): src/app/writing/[slug]/page.tsx
-- **Next step**: Implement /writing/[slug] route with cover image, title, tag, date, article text, and up next section
+- **Phase / Task**: Phase 2 / T9 - Build Store product listing page
+- **Completed**: T1, T2, T3, T4, T5, T6, T7, T8
+- **In-progress** (file:line): src/app/store/page.tsx
+- **Next step**: Implement /store listing route displaying all 3 products with prices and descriptions
 - **Blockers**: none
-- **Uncommitted files**: src/data/articles.ts, src/app/writing/, .specs/
+- **Uncommitted files**: src/app/writing/[slug]/, .specs/
 - **Branch**: master
