@@ -22,6 +22,8 @@ export function Work() {
                 alt=""
                 width={24}
                 height={24}
+                unoptimized
+                loading="eager"
                 className="h-6 w-6 shrink-0 rounded-[6px] object-contain"
               />
               <h3 className="text-[15px] font-normal text-[#ededed]">
@@ -33,6 +35,7 @@ export function Work() {
               alt={project.title}
               width={524}
               height={260}
+              unoptimized
               className="h-[260px] w-full rounded-lg object-cover"
             />
           </Link>
