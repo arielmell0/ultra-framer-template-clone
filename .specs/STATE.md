@@ -26,15 +26,23 @@
 - **Date**: 2026-09-14
 - **Status**: active
 
+### AD-004
+- **Decision**: Separate the SideUp engineering work into 3 dedicated standalone project showcases (SideUp Business Portal, SideUp Admin Console, SideUp Employee App), featuring real high-resolution screenshots from `/home/arieldelmar/Projects/sideup/composer-monorepo-prints`, verified business rules from monorepo specifications, humanized copy adhering to strict prose standards, and backward-compatible redirect from `/work/sideup` to `/work/sideup-business-portal`.
+- **Reason**: The user requires their corporate benefits engineering work at SideUp to be clearly visible across employer benefit management, operations compliance, and cardholder mobile web domains.
+- **Trade-off**: Increases total project count to 11; legacy `/work/sideup` route redirects to primary employer portal.
+- **Scope**: `src/data/projects.ts`, `src/app/work/sideup/page.tsx`, `public/project-prints/sideup/`, test suites, and subpage navigation.
+- **Date**: 2026-09-15
+- **Status**: active
+
 ---
 
 ## Handoff
 
-- **Feature**: separated-works
-- **Phase / Task**: Phase 2 / T8 - Complete
-- **Completed**: T1 (Synchronize project-prints into clone and public), T2 (Projects data module with 6 separated platforms), T3 (Projects unit test suite), T4 (Home Work section update), T5 (LeftRailNav and work redirect to admin-crm), T6 (Legacy infleux redirect), T7 (ProjectDetailPage tests), T8 (E2E verification, typecheck, build, visual validation)
-- **In-progress** (file:line): None
-- **Next step**: None (feature completed and verified)
+- **Feature**: sideup-apps
+- **Phase / Task**: Phase 2 / T7 - Verification & E2E
+- **Completed**: T1 (Copy SideUp prints and logo into project directories), T2 (Update projects data module with 3 separate SideUp platforms), T3 (Update projects unit test suite), T4 (Add backward-compatible redirect for legacy /work/sideup route), T5 (Update component test suites), T6 (Run full test suite, typecheck, static build)
+- **In-progress** (file:line): T7 (.specs/features/sideup-apps/e2e-test.md)
+- **Next step**: Finalize E2E evidence and verification
 - **Blockers**: none
-- **Uncommitted files**: none
+- **Uncommitted files**: pending atomic commits
 - **Branch**: master

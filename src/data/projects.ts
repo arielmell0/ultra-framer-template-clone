@@ -238,20 +238,152 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "sideup",
-    title: "SideUp",
-    subtitle: "Full-stack Node.js delivery for a London product team",
+    slug: "sideup-business-portal",
+    title: "SideUp Business Portal",
+    subtitle: "Employer portal for benefit enrollment schemes, flexible allowance budgets, and tax reporting",
     client: "SideUp",
-    timeline: "Jan 2026 – Present",
+    timeline: "Jan 2026 - Present",
     role: "Full Stack Developer",
     outcome:
-      "Delivered high-performance Node.js microservices and resilient React interfaces for a remote product team based in London, UK.",
-    logo: "/images/logo-beta.png",
-    cover: "/images/hero.png",
+      "Built multi-step enrollment workflows, flexible allowance allocations, and tax reporting features across React and Node.js microservices for UK corporate clients.",
+    logo: "/images/sideup-logo.svg",
+    cover: "/project-prints/sideup/business-front/01-home.png",
+    prints: [
+      {
+        src: "/project-prints/sideup/business-front/01-home.png",
+        caption:
+          "Employer dashboard with enrollment metrics, average benefit spend, and upcoming payroll invoice dates.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/02-employees.png",
+        caption:
+          "Employee directory tracking enrollment statuses, payroll allocations, and active team members.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/03-tax-report.png",
+        caption:
+          "Tax reporting center with deductible allowance summaries and payroll reporting periods.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/04-new-enrollment-01.png",
+        caption:
+          "Benefit enrollment setup step: selecting payment frequency, schedule, and categories such as commuting, learning, and wellness.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/04-new-enrollment-02-setup.png",
+        caption:
+          "Budget allocation step: configuring flexible monthly allowances per employee with live cost calculations.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/04-new-enrollment-03-employees.png",
+        caption:
+          "Roster confirmation step: selecting employees eligible for the enrollment scheme.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/04-new-enrollment-04-summary.png",
+        caption:
+          "Enrollment summary review: checking category commitments and schedule details before submission.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/04-new-enrollment-05-confirm-modal.png",
+        caption:
+          "Conflict handling modal: managing reassignments when an employee is already enrolled in another scheme.",
+      },
+      {
+        src: "/project-prints/sideup/business-front/04-new-enrollment-06-details.png",
+        caption:
+          "Active enrollment details page: category allocations, invoicing schedule, and cancellation options.",
+      },
+    ],
     paragraphs: [
-      "Working remotely with SideUp's London engineering team, I contribute to building and maintaining high-scale web platforms using modern Node.js and TypeScript architectures.",
-      "My responsibilities include designing scalable API contracts, optimizing relational database queries, and collaborating across time zones to ship features with strict quality and test-driven reliability.",
-      "I work closely with product managers and designers to transform complex user requirements into elegant, high-performance UI components in React.",
+      "SideUp provides an employee benefits management platform for UK companies. Working on the business portal, I helped build the tools that employers use to set up corporate benefit packages, manage employee rosters, and run payroll reports.",
+      "The enrollment flow lets companies configure flexible benefit categories, including commuting, meals, education, and health. The frontend connects to a Node.js and PostgreSQL backend where submitted enrollments create real employee customer accounts, assign category allowances, and calculate monthly payroll deductions.",
+    ],
+  },
+  {
+    slug: "sideup-admin-portal",
+    title: "SideUp Admin Console",
+    subtitle: "Operations backoffice for UK tax regions, statutory obligations, and client company management",
+    client: "SideUp",
+    timeline: "Jan 2026 - Present",
+    role: "Full Stack Developer",
+    outcome:
+      "Developed backoffice tools for client organization management, HMRC tax jurisdiction rules, and statutory pension compliance.",
+    logo: "/images/sideup-logo.svg",
+    cover: "/project-prints/sideup/admin-front/01-home.png",
+    prints: [
+      {
+        src: "/project-prints/sideup/admin-front/01-home.png",
+        caption:
+          "Admin operations dashboard monitoring platform enterprise activity, active companies, and total benefit volumes.",
+      },
+      {
+        src: "/project-prints/sideup/admin-front/02-list-companies.png",
+        caption:
+          "Client companies list showing enrolled employee counts, total benefit commitments, and account statuses.",
+      },
+      {
+        src: "/project-prints/sideup/admin-front/03-taxing.png",
+        caption:
+          "Tax regions interface configuring UK allowances, tax years, reporting periods, and jurisdictional rules.",
+      },
+      {
+        src: "/project-prints/sideup/admin-front/04-terms-of-use.png",
+        caption:
+          "Regulatory terms of use table with status tracking and version creation actions.",
+      },
+      {
+        src: "/project-prints/sideup/admin-front/05-terms-of-use.png",
+        caption:
+          "Terms of use management view for compliance review and legal document updates.",
+      },
+    ],
+    paragraphs: [
+      "The admin console serves SideUp's internal operations team. It handles platform oversight across all enrolled client companies, monitors benefit distribution volumes, and manages compliance configurations.",
+      "I built features for the taxing module, where operators define regional tax rules for UK jurisdictions and configure statutory requirements such as workplace pension auto-enrolment rules, salary sacrifice mechanisms, and annual contribution limits.",
+    ],
+  },
+  {
+    slug: "sideup-employee-app",
+    title: "SideUp Employee App",
+    subtitle: "Mobile web application for employees to manage virtual Visa cards and flexible benefit wallets",
+    client: "SideUp",
+    timeline: "Jan 2026 - Present",
+    role: "Full Stack Developer",
+    outcome:
+      "Delivered responsive interfaces and microservice integrations for virtual card management, category wallets, and transaction tracking.",
+    logo: "/images/sideup-logo.svg",
+    cover: "/project-prints/sideup/customer-front/01-home.png",
+    prints: [
+      {
+        src: "/project-prints/sideup/customer-front/01-home.png",
+        caption:
+          "Employee home screen showing category balance cards, expense distribution charts, and shortcut navigation.",
+      },
+      {
+        src: "/project-prints/sideup/customer-front/02-cards.png",
+        caption:
+          "Virtual card screen displaying branded virtual Visa cards with controls to create and manage cards.",
+      },
+      {
+        src: "/project-prints/sideup/customer-front/03-transactions.png",
+        caption:
+          "Transactions view with date filters, category search, and real-time expense reconciliation.",
+      },
+      {
+        src: "/project-prints/sideup/customer-front/04-support.png",
+        caption:
+          "In-app support ticket form for card inquiries, claim questions, and file attachments.",
+      },
+      {
+        src: "/project-prints/sideup/customer-front/05-offer.png",
+        caption:
+          "Benefit scheme status screen for employees checking active scheme enrollments.",
+      },
+    ],
+    paragraphs: [
+      "The employee application gives workers direct access to the corporate benefits provided by their employer. Employees log in using Clerk authentication to view their allowances, check balances across categories, and issue virtual cards.",
+      "I developed components for the card management view and transaction history, integrating with backend card issuing APIs to support instant virtual Visa card creation and category-tagged transaction feeds.",
     ],
   },
   {
