@@ -39,15 +39,19 @@
 - `npm run typecheck` (`tsc --noEmit`): 0 errors.
 - `npm run build` (`next build`): Prerendered 29 static routes including `/work/sideup`, `/work/sideup-business-portal`, `/work/sideup-admin-portal`, and `/work/sideup-employee-app`.
 
-### Real Point-to-Point E2E Evidence
-Captured real browser screenshots in `.specs/features/sideup-apps/e2e-shots/`:
-- `01-home-works-section.png`: Home page showing SideUp Business Portal, Admin Console, and Employee App cards.
-- `02-sideup-business-portal.png`: SideUp Business Portal case study with 9-step enrollment workflow prints gallery.
-- `03-sideup-admin-portal.png`: SideUp Admin Console case study with tax regions and compliance prints gallery.
-- `04-sideup-employee-app.png`: SideUp Employee App case study with virtual Visa card and wallet prints gallery.
+### Real Point-to-Point E2E Evidence via Browser-Harness & Bermuda
+Executed under Bermuda browser claim (`agy#w5:p1`), driving Chrome via `browser-harness`:
+- Acquired exclusive browser lease via `bermuda thread claim browser --ttl 20m`.
+- Created dedicated test tab via `new_tab("http://localhost:3456/")`.
+- Verified Home page Work section and captured `.specs/features/sideup-apps/e2e-shots/01-home-works.png`.
+- Navigated to `/work/sideup-business-portal/`, verified 9 enrollment prints, captured `02-business-portal.png`.
+- Navigated to `/work/sideup-admin-portal/`, verified 5 compliance prints, captured `03-admin-portal.png`.
+- Navigated to `/work/sideup-employee-app/`, verified 5 cardholder prints, captured `04-employee-app.png`.
+- Navigated to `/work/sideup/` and verified automatic browser redirect to `/work/sideup-business-portal/`.
+- Closed test tab cleanly via `close_tab(tab)` and released Bermuda lease via `bermuda thread release browser`.
 
 ---
 
 ## 3. Verdict
 
-**PASS** — All acceptance criteria verified with automated unit/integration tests, typecheck, static build, and point-to-point browser evidence.
+**PASS** — All acceptance criteria verified with automated unit/integration tests, typecheck, static build, and real point-to-point browser-harness verification under Bermuda lease.
