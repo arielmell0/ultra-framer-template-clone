@@ -26,7 +26,9 @@ describe("ProjectDetailPage", () => {
     expect(screen.getByText("Influencer App (App-Loja)")).toBeDefined();
     expect(screen.getByText("Influencer Web Platform")).toBeDefined();
     expect(screen.getByText("Invoicing & Accountant Platform (NFs)")).toBeDefined();
-    expect(screen.getByText("SideUp")).toBeDefined();
+    expect(screen.getByText("SideUp Business Portal")).toBeDefined();
+    expect(screen.getByText("SideUp Admin Console")).toBeDefined();
+    expect(screen.getByText("SideUp Employee App")).toBeDefined();
   });
 
   it("renders Invoicing & Accountant Portal case study with accountant delegation workflow", async () => {
@@ -39,5 +41,19 @@ describe("ProjectDetailPage", () => {
     expect(screen.getByText(/Influencer view/i)).toBeDefined();
     expect(screen.getByText(/Accountant view/i)).toBeDefined();
     expect(screen.getByText(/Add accountant flow/i)).toBeDefined();
+  });
+
+  it("renders SideUp Business Portal case study with prints gallery and enrollment workflow", async () => {
+    const page = await ProjectDetailPage({
+      params: Promise.resolve({ slug: "sideup-business-portal" }),
+    });
+    render(page);
+
+    expect(screen.getByRole("heading", { name: "SideUp Business Portal" })).toBeDefined();
+    expect(screen.getByText("SideUp")).toBeDefined();
+    expect(screen.getByText("Jan 2026 - Present")).toBeDefined();
+    expect(screen.getByText(/Employer dashboard with enrollment metrics/i)).toBeDefined();
+    expect(screen.getByText(/Benefit enrollment setup step/i)).toBeDefined();
+    expect(screen.getByText(/Conflict handling modal/i)).toBeDefined();
   });
 });

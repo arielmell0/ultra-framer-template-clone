@@ -11,7 +11,9 @@ describe("projects data", () => {
       "influencer-app",
       "influencer-web",
       "invoicing-accountant-portal",
-      "sideup",
+      "sideup-business-portal",
+      "sideup-admin-portal",
+      "sideup-employee-app",
       "upwork-cms",
       "upwork-rag",
     ]);
@@ -52,6 +54,29 @@ describe("projects data", () => {
       }
 
       expect(project?.logo).toBe("/images/infleux-favicon.png");
+    }
+  });
+
+  it("contains real prints galleries for all separated SideUp platforms", () => {
+    const sideupSlugs = [
+      { slug: "sideup-business-portal", printCount: 9, folder: "business-front" },
+      { slug: "sideup-admin-portal", printCount: 5, folder: "admin-front" },
+      { slug: "sideup-employee-app", printCount: 5, folder: "customer-front" },
+    ];
+
+    for (const { slug, printCount, folder } of sideupSlugs) {
+      const project = projects.find((p) => p.slug === slug);
+      expect(project, `Project ${slug} should exist`).toBeDefined();
+      expect(project?.prints, `Project ${slug} should have prints`).toBeDefined();
+      expect(project?.prints?.length).toBe(printCount);
+
+      for (const print of project!.prints!) {
+        expect(print.src).toContain(`/project-prints/sideup/${folder}/`);
+        expect(print.caption.length).toBeGreaterThan(10);
+      }
+
+      expect(project?.logo).toBe("/images/sideup-logo.svg");
+      expect(project?.client).toBe("SideUp");
     }
   });
 });
