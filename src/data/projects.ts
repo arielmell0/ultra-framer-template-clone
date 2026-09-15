@@ -238,11 +238,220 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "sideup-business-portal",
-    title: "SideUp Business Portal",
-    subtitle: "Employer portal for benefit enrollment schemes, flexible allowance budgets, and tax reporting",
+    slug: "sideup-employer-portal",
+    title: "SideUp Employer Portal",
+    subtitle: "Workforce benefits management platform for program enrollment, payroll deductions, and automated HR sync",
     client: "SideUp",
-    timeline: "Jan 2026 - Present",
+    timeline: "May 2026 - Present",
+    role: "Full Stack Developer",
+    outcome:
+      "Engineered the rewritten employer web application on Vite and React with Clerk authentication, multi-step program creation wizards, automated invoice settlements, and HR integrations.",
+    logo: "/images/sideup-purple-favicon.png",
+    cover: "/project-prints/sideup-v2/admin-web/01-home.png",
+    prints: [
+      {
+        src: "/project-prints/sideup-v2/admin-web/01-home.png",
+        caption:
+          "Employer dashboard with company balance metrics, active programs overview, upcoming invoice status, and recent benefit activity.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/02-employees.png",
+        caption:
+          "Workforce employee directory displaying department assignments, active statuses, filter toggles, and bulk edit actions.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/03-employees-import.png",
+        caption:
+          "Sync and import hub supporting direct HRIS integration with Gusto, BambooHR, and ADP alongside bulk spreadsheet uploads.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/04-benefits.png",
+        caption:
+          "Corporate benefit programs management table showing scheduled enrollment windows, headcount allocations, and annual budgets.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/05-benefits-documents.png",
+        caption:
+          "Benefits compliance and document verification center tracking pending expense evidence, approval cycles, and reimbursement claims.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/06-billing-overview.png",
+        caption:
+          "Financial control dashboard displaying company wallet balance, top-up triggers, current billing cycle totals, and shortfall projections.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/07-billing-invoices.png",
+        caption:
+          "Billing history and invoice statements ledger with 12-month date filters, payment statuses, and CSV export capabilities.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/08-billing-payment-methods.png",
+        caption:
+          "Funding sources management interface for credit card settlement, bank direct debits, and payment priority reordering.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/09-settings-company-profile.png",
+        caption:
+          "Company profile management with KYB identity verification badge, platform contact details, and corporate legal entity records.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/10-settings-platform-users.png",
+        caption:
+          "Role-based platform access control list managing company administrators, invitations, and active permissions.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/11-settings-integrations.png",
+        caption:
+          "Integrations directory with one-click OAuth connections for Xero accounting, Gusto, and BambooHR.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/12-settings-my-account.png",
+        caption:
+          "Administrator profile view managing personal credentials, notification preferences, and platform security.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/13-employees-create.png",
+        caption:
+          "Four-step employee onboarding wizard collecting personal identity, job department, compensation details, and benefits eligibility.",
+      },
+      {
+        src: "/project-prints/sideup-v2/admin-web/14-benefits-create-program.png",
+        caption:
+          "Seven-step benefit program creation wizard configuring foundation categories, contribution rules, eligibility criteria, and budget caps.",
+      },
+    ],
+    paragraphs: [
+      "The employer portal was completely rewritten from the prototype system to eliminate frontend race conditions and simplify workforce administration. Built with React and TypeScript, the new application provides corporate managers with a clear control center to administer employee benefit schemes, manage automated payroll deductions, and monitor invoice settlements.",
+      "I built the multi-step program configuration wizard and the HR integration pipelines. The system syncs employee rosters directly with providers like Gusto and BambooHR, calculates monthly budget commitments across flexible allowance categories, and handles automated invoicing via Stripe direct debit.",
+    ],
+  },
+  {
+    slug: "sideup-backoffice",
+    title: "SideUp Backoffice",
+    subtitle: "Internal operations platform for benefit catalogs, statutory obligation rules, and multi-region deployment",
+    client: "SideUp",
+    timeline: "May 2026 - Present",
+    role: "Full Stack Developer",
+    outcome:
+      "Built the internal operations console managing global benefit catalogs, Merchant Category Code mappings, statutory obligation condition engines, and Xero accounting pipelines.",
+    logo: "/images/sideup-purple-favicon.png",
+    cover: "/project-prints/sideup-v2/backoffice/01-catalog-benefits.png",
+    prints: [
+      {
+        src: "/project-prints/sideup-v2/backoffice/01-catalog-benefits.png",
+        caption:
+          "Global platform benefit catalog defining pre-tax transit, child care, learning budgets, and lifestyle allowances with annual caps.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/02-catalog-mcc.png",
+        caption:
+          "Merchant Category Code mapping registry restricting allowance spending to approved merchant category groups.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/03-statutory-obligations.png",
+        caption:
+          "Statutory obligations engine enforcing mandatory regional employer benefits, including US transit ordinances and UK workplace pension rules.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/04-condition-types.png",
+        caption:
+          "Eligibility condition types registry evaluating employee age, location, industry, dependents, and filial criteria for automated program matching.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/05-terms.png",
+        caption:
+          "Versioned legal terms management console publishing markdown contract revisions for employer and customer agreements.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/06-regions.png",
+        caption:
+          "Infrastructure deployment regions and API routing targets managing regional data residency and localized microservice endpoints.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/07-billing.png",
+        caption:
+          "Cross-company billing monitor tracking settlement cycles, open balances, overdue invoices, and transaction reconciliation.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/07-billing-xero.png",
+        caption:
+          "SideUp Xero OAuth integration console synchronizing ledger entries and reconciliation data directly into accounting pipelines.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/08-wallets.png",
+        caption:
+          "Real-time employee wallet monitor tracking card status, active balances, and allocation commitments across all enrolled corporate clients.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/09-notification-test.png",
+        caption:
+          "Notification testing console allowing operators to dispatch targeted push notifications and verify dispatch pipelines.",
+      },
+      {
+        src: "/project-prints/sideup-v2/backoffice/10-new-benefit-wizard.png",
+        caption:
+          "Five-step benefit creation wizard establishing category definitions, card restrictions, employee guides, and voluntary payroll deduction rules.",
+      },
+    ],
+    paragraphs: [
+      "The backoffice platform is the operations backbone for SideUp's internal teams. It centralizes control over the platform-wide benefits catalog, sets legal and compliance boundaries, and regulates transaction routing across multiple geographic jurisdictions.",
+      "I developed the statutory obligations configuration engine, which evaluates complex employee demographic rules to automatically enforce regional mandates. I also integrated the Merchant Category Code mapping system and built the automated Xero accounting sync, enabling operations staff to reconcile high-volume company settlements without manual ledger entry.",
+    ],
+  },
+  {
+    slug: "sideup-customer-web",
+    title: "SideUp Customer App",
+    subtitle: "Cross-platform mobile web app for digital Visa benefits cards, peer-to-peer recognition, and allowance tracking",
+    client: "SideUp",
+    timeline: "May 2026 - Present",
+    role: "Full Stack Developer",
+    outcome:
+      "Rewrote the cardholder web application using React Native Web and Expo Router, delivering instant digital card issuance, peer recognition rewards, and spend history.",
+    logo: "/images/sideup-purple-favicon.png",
+    cover: "/project-prints/sideup-v2/customer-web/01-home.png",
+    prints: [
+      {
+        src: "/project-prints/sideup-v2/customer-web/01-home.png",
+        caption:
+          "Cardholder dashboard featuring personalized greetings, pre-tax allowance cards, recent spend summaries, and the colleague recognition feed.",
+      },
+      {
+        src: "/project-prints/sideup-v2/customer-web/02-cards.png",
+        caption:
+          "Digital wallet screen displaying branded Visa card status with Celtic Bank and Stripe Issuing compliance disclosures.",
+      },
+      {
+        src: "/project-prints/sideup-v2/customer-web/03-recognition.png",
+        caption:
+          "Peer recognition portal with monthly point balances and an interactive shoutout composer with company core value badges.",
+      },
+      {
+        src: "/project-prints/sideup-v2/customer-web/04-activity.png",
+        caption:
+          "Card transaction ledger featuring real-time merchant search, receipt requirement alerts, and status filter pills.",
+      },
+      {
+        src: "/project-prints/sideup-v2/customer-web/05-profile.png",
+        caption:
+          "Employee profile and security settings with SOC2 compliance verification, dark theme selection, and biometric timeout controls.",
+      },
+      {
+        src: "/project-prints/sideup-v2/customer-web/06-benefits.png",
+        caption:
+          "Enrolled benefits overview displaying active employer-sponsored categories, remaining balances, and HR support links.",
+      },
+    ],
+    paragraphs: [
+      "The customer web application was re-engineered with React Native Web and Expo Router to replace the earlier prototype's brittle onboarding flow with a dependable, responsive interface. It gives enrolled employees immediate access to their employer-funded benefit wallets and branded virtual Visa cards.",
+      "I implemented the cardholder wallet experience with Stripe Issuing integration, ensuring real-time spend notifications and receipt capture. I also built the peer recognition module, which lets colleagues award points tied to company values that can be redeemed across lifestyle and wellness allowances.",
+    ],
+  },
+  {
+    slug: "sideup-business-portal",
+    title: "SideUp Business Portal (Legacy v1)",
+    subtitle: "Initial employer portal prototype for benefit enrollment schemes, flexible allowance budgets, and tax reporting",
+    client: "SideUp",
+    timeline: "Jan 2026 - May 2026",
     role: "Full Stack Developer",
     outcome:
       "Built multi-step enrollment workflows, flexible allowance allocations, and tax reporting features across React and Node.js microservices for UK corporate clients.",
@@ -302,10 +511,10 @@ export const projects: Project[] = [
   },
   {
     slug: "sideup-admin-portal",
-    title: "SideUp Admin Console",
-    subtitle: "Operations backoffice for UK tax regions, statutory obligations, and client company management",
+    title: "SideUp Admin Console (Legacy v1)",
+    subtitle: "First-generation operations backoffice for UK tax jurisdictions and client company records",
     client: "SideUp",
-    timeline: "Jan 2026 - Present",
+    timeline: "Jan 2026 - May 2026",
     role: "Full Stack Developer",
     outcome:
       "Developed backoffice tools for client organization management, HMRC tax jurisdiction rules, and statutory pension compliance.",
@@ -345,10 +554,10 @@ export const projects: Project[] = [
   },
   {
     slug: "sideup-employee-app",
-    title: "SideUp Employee App",
-    subtitle: "Mobile web application for employees to manage virtual Visa cards and flexible benefit wallets",
+    title: "SideUp Employee App (Legacy v1)",
+    subtitle: "Early mobile web prototype for employee benefit cards and flexible wallets",
     client: "SideUp",
-    timeline: "Jan 2026 - Present",
+    timeline: "Jan 2026 - May 2026",
     role: "Full Stack Developer",
     outcome:
       "Delivered responsive interfaces and microservice integrations for virtual card management, category wallets, and transaction tracking.",
