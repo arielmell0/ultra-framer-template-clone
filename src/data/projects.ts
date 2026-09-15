@@ -246,7 +246,7 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
     outcome:
       "Built multi-step enrollment workflows, flexible allowance allocations, and tax reporting features across React and Node.js microservices for UK corporate clients.",
-    logo: "/images/sideup-logo.svg",
+    logo: "/images/sideup-favicon.png",
     cover: "/project-prints/sideup/business-front/01-home.png",
     prints: [
       {
@@ -309,7 +309,7 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
     outcome:
       "Developed backoffice tools for client organization management, HMRC tax jurisdiction rules, and statutory pension compliance.",
-    logo: "/images/sideup-logo.svg",
+    logo: "/images/sideup-favicon.png",
     cover: "/project-prints/sideup/admin-front/01-home.png",
     prints: [
       {
@@ -352,7 +352,7 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
     outcome:
       "Delivered responsive interfaces and microservice integrations for virtual card management, category wallets, and transaction tracking.",
-    logo: "/images/sideup-logo.svg",
+    logo: "/images/sideup-favicon.png",
     cover: "/project-prints/sideup/customer-front/01-home.png",
     prints: [
       {

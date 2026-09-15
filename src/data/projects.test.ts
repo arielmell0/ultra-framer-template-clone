@@ -75,7 +75,7 @@ describe("projects data", () => {
         expect(print.caption.length).toBeGreaterThan(10);
       }
 
-      expect(project?.logo).toBe("/images/sideup-logo.svg");
+      expect(project?.logo).toBe("/images/sideup-favicon.png");
       expect(project?.client).toBe("SideUp");
     }
   });
