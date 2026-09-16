@@ -36,6 +36,14 @@ describe("projects data", () => {
       expect(print.src).toContain("/project-prints/pathfinder/");
       expect(print.caption.length).toBeGreaterThan(10);
     }
+
+    // Core product flow front-loaded: Dashboard, College Recs, Career Recs in Desktop & Mobile
+    expect(pathfinder.prints![0].src).toContain("05-user-profile-desktop.png");
+    expect(pathfinder.prints![1].src).toContain("10-student-dashboard-mobile.png");
+    expect(pathfinder.prints![2].src).toContain("01-college-recommendations-desktop.png");
+    expect(pathfinder.prints![3].src).toContain("07-college-recommendations-mobile.png");
+    expect(pathfinder.prints![4].src).toContain("02-career-recommendations-desktop.png");
+    expect(pathfinder.prints![5].src).toContain("08-career-recommendations-mobile.png");
   });
 
   it("validates required fields for each project", () => {
@@ -120,6 +128,22 @@ describe("projects data", () => {
 
       expect(project?.logo).toBe("/images/sideup-favicon.png");
       expect(project?.client).toBe("SideUp");
+    }
+  });
+
+  it("contains real prints gallery, NDIS logo, and rating badge for Upwork Puck CMS", () => {
+    const cms = projects.find((p) => p.slug === "upwork-cms");
+    expect(cms).toBeDefined();
+    expect(cms?.title).toBe("Upwork CMS");
+    expect(cms?.logo).toBe("/images/ndis-favicon.png");
+    expect(cms?.cover).toBe("/project-prints/upwork-cms/00-cover.png");
+    expect(cms?.ratingBadge).toBe("/images/upwork-5-star-review.png");
+    expect(cms?.prints).toBeDefined();
+    expect(cms?.prints?.length).toBe(11);
+
+    for (const print of cms!.prints!) {
+      expect(print.src).toContain("/project-prints/upwork-cms/");
+      expect(print.caption.length).toBeGreaterThan(10);
     }
   });
 });

@@ -22,9 +22,9 @@ describe("StackPage", () => {
     expect(screen.getByText("VS Code")).toBeDefined();
 
     // Check key hardware items
-    expect(screen.getByText("Studio Display")).toBeDefined();
-    expect(screen.getByText("Magic Keyboard")).toBeDefined();
-    expect(screen.getByText("Logitech BRIO")).toBeDefined();
-    expect(screen.getByText("MacBook Pro 14”")).toBeDefined();
+    expect(screen.getByText('Philco Gaming 30"')).toBeDefined();
+    expect(screen.getByText("Akko TAC75 HE")).toBeDefined();
+    expect(screen.getByText("EMEET 960 2K")).toBeDefined();
+    expect(screen.getByText("Hackintosh (i7 12th Gen, 32GB RAM, RX 6750)")).toBeDefined();
   });
 });

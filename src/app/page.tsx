@@ -2,9 +2,6 @@ import { LeftRailNav } from "@/components/LeftRailNav";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Work } from "@/components/Work";
-import { StoreSection } from "@/components/StoreSection";
-import { WritingSection } from "@/components/WritingSection";
-import { SubscribeSection } from "@/components/SubscribeSection";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {

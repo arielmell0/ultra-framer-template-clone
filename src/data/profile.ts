@@ -133,23 +133,23 @@ export const profile: Profile = {
   ],
   physical: [
     {
-      name: "Studio Display",
+      name: 'Philco Gaming 30"',
       category: "SCREEN",
       image: "/images/stack-studio-display.png",
     },
     {
-      name: "Magic Keyboard",
+      name: "Akko TAC75 HE",
       category: "KEYBOARD",
       image: "/images/stack-keyboard.png",
     },
     {
-      name: "Logitech BRIO",
+      name: "EMEET 960 2K",
       category: "WEBCAM",
       image: "/images/stack-brio.png",
     },
     {
-      name: "MacBook Pro 14”",
-      category: "LAPTOP",
+      name: "Hackintosh (i7 12th Gen, 32GB RAM, RX 6750)",
+      category: "DESKTOP",
       image: "/images/stack-macbook.png",
     },
   ],

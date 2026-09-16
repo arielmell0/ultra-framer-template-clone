@@ -33,34 +33,19 @@ export const projects: Project[] = [
     ratingBadge: "/images/upwork-5-star-review.png",
     prints: [
       {
+        src: "/project-prints/pathfinder/05-user-profile-desktop.png",
+        caption:
+          "Student dashboard and profile hub displaying academic preferences, career interests, and assessment status.",
+      },
+      {
+        src: "/project-prints/pathfinder/10-student-dashboard-mobile.png",
+        caption:
+          "Mobile student home dashboard tracking psychometric assessment progress, college recommendations, and quick shortcuts.",
+      },
+      {
         src: "/project-prints/pathfinder/01-college-recommendations-desktop.png",
         caption:
           "RAG college discovery engine featuring semantic search across degree programs, relevance sorting, and institutional cards.",
-      },
-      {
-        src: "/project-prints/pathfinder/02-career-recommendations-desktop.png",
-        caption:
-          "AI career recommendations matching student strengths with industry sectors, salary expectations ($90k-$120k), and growth rates.",
-      },
-      {
-        src: "/project-prints/pathfinder/03-compare-colleges-desktop.png",
-        caption:
-          "Multi-college comparison matrix comparing admissions, tuition fees, and degree offerings side by side.",
-      },
-      {
-        src: "/project-prints/pathfinder/04-strengths-assessment-desktop.png",
-        caption:
-          "Psychometric strengths evaluation module measuring cognitive traits such as Achiever and Problem-Solving on a 5-point scale.",
-      },
-      {
-        src: "/project-prints/pathfinder/05-user-profile-desktop.png",
-        caption:
-          "Student dashboard and profile hub displaying completed assessments, strengths reports, and bookmarked colleges.",
-      },
-      {
-        src: "/project-prints/pathfinder/06-signup-onboarding-desktop.png",
-        caption:
-          "Multi-role account registration interface supporting Students, School Administrators, and Guidance Counselors.",
       },
       {
         src: "/project-prints/pathfinder/07-college-recommendations-mobile.png",
@@ -68,9 +53,19 @@ export const projects: Project[] = [
           "Mobile college recommendations feed with interactive filters and touch-optimized institution cards.",
       },
       {
+        src: "/project-prints/pathfinder/02-career-recommendations-desktop.png",
+        caption:
+          "AI career recommendations matching student strengths with industry sectors, salary expectations ($90k-$120k), and growth rates.",
+      },
+      {
         src: "/project-prints/pathfinder/08-career-recommendations-mobile.png",
         caption:
           "Mobile career guidance view with industry badges, salary benchmarks, and matching skills tags.",
+      },
+      {
+        src: "/project-prints/pathfinder/03-compare-colleges-desktop.png",
+        caption:
+          "Multi-college comparison matrix comparing admissions, tuition fees, and degree offerings side by side.",
       },
       {
         src: "/project-prints/pathfinder/09-compare-colleges-mobile.png",
@@ -78,14 +73,9 @@ export const projects: Project[] = [
           "Mobile university comparison tool evaluating tuition, campus settings, and program levels.",
       },
       {
-        src: "/project-prints/pathfinder/10-student-dashboard-mobile.png",
+        src: "/project-prints/pathfinder/04-strengths-assessment-desktop.png",
         caption:
-          "Mobile student portal tracking psychometric assessment progress and quick recommendation shortcuts.",
-      },
-      {
-        src: "/project-prints/pathfinder/11-user-profile-mobile.png",
-        caption:
-          "Mobile profile view displaying account credentials, strengths report status, and saved programs.",
+          "Psychometric strengths evaluation module measuring cognitive traits such as Achiever and Problem-Solving on a 5-point scale.",
       },
       {
         src: "/project-prints/pathfinder/12-strengths-assessment-mobile.png",
@@ -93,14 +83,24 @@ export const projects: Project[] = [
           "Mobile psychometric assessment question card with quick response selectors.",
       },
       {
-        src: "/project-prints/pathfinder/13-signup-mobile.png",
-        caption:
-          "Mobile account creation flow with role selection and credentials configuration.",
-      },
-      {
         src: "/project-prints/pathfinder/14-college-filters-modal-mobile.png",
         caption:
           "Mobile college discovery filter modal with tuition sliders, state selectors, and setting options.",
+      },
+      {
+        src: "/project-prints/pathfinder/11-user-profile-mobile.png",
+        caption:
+          "Mobile profile view displaying account credentials, strengths report status, and saved programs.",
+      },
+      {
+        src: "/project-prints/pathfinder/06-signup-onboarding-desktop.png",
+        caption:
+          "Multi-role account registration interface supporting Students, School Administrators, and Guidance Counselors.",
+      },
+      {
+        src: "/project-prints/pathfinder/13-signup-mobile.png",
+        caption:
+          "Mobile account creation flow with role selection and credentials configuration.",
       },
       {
         src: "/project-prints/pathfinder/15-email-confirmation-mobile.png",
@@ -698,18 +698,76 @@ export const projects: Project[] = [
   {
     slug: "upwork-cms",
     title: "Upwork CMS",
-    subtitle: "Figma-to-React landing CMS with Puck — 5-star freelance delivery",
-    client: "Upwork Client",
+    subtitle: "Component-driven visual CMS built with Puck and React for Australian Government pages",
+    client: "Australian Government Service Provider",
     timeline: "Jan 2024 – Dec 2025",
-    role: "Freelance Full Stack Developer",
+    role: "Frontend & CMS Engineer",
     outcome:
-      "Engineered a visual component-driven landing page CMS leveraging Puck and React, converting intricate Figma systems into pixel-perfect modular blocks with 5-star rating.",
-    logo: "/images/logo-gamma.png",
-    cover: "/images/work-beta.jpg",
+      "Engineered a visual component-driven page builder leveraging the Puck CMS engine and React, translating complex Figma systems into accessible, government-compliant modular blocks with a 5.0-star Upwork client rating.",
+    logo: "/images/ndis-favicon.png",
+    cover: "/project-prints/upwork-cms/00-cover.png",
+    ratingBadge: "/images/upwork-5-star-review.png",
+    prints: [
+      {
+        src: "/project-prints/upwork-cms/01-puck-cms-editor-desktop.png",
+        caption:
+          "Desktop Puck CMS visual editor with live canvas preview, viewport switching controls, and top action toolbar.",
+      },
+      {
+        src: "/project-prints/upwork-cms/02-puck-component-inspector.png",
+        caption:
+          "Component property inspector sidebar displaying configurable fields for the HeroHandShake component.",
+      },
+      {
+        src: "/project-prints/upwork-cms/03-cms-component-library-blocks.png",
+        caption:
+          "Puck component library drawer exposing custom Australian Government blocks such as CardNDIS and HeroBannerNDIS.",
+      },
+      {
+        src: "/project-prints/upwork-cms/04-australian-gov-portal-hero.png",
+        caption:
+          "Rendered public portal hero section with accessible navigation, search bar, and primary call-to-action buttons.",
+      },
+      {
+        src: "/project-prints/upwork-cms/05-why-choose-us-governance-pillars.png",
+        caption:
+          "Four-pillar governance value proposition section with thematic illustrations and structured policy breakdowns.",
+      },
+      {
+        src: "/project-prints/upwork-cms/06-citizen-dialogue-cards.png",
+        caption:
+          "Interactive citizen dialogue cards highlighting civic participation, digital accessibility, and public policy reforms.",
+      },
+      {
+        src: "/project-prints/upwork-cms/07-ten-step-citizen-consultation-process.png",
+        caption:
+          "Ten-step civic consultation workflow card illustrating sequential community engagement stages.",
+      },
+      {
+        src: "/project-prints/upwork-cms/08-advocacy-national-reform-cards.png",
+        caption:
+          "National advocacy and policy reform feature cards linking to stakeholder consultation initiatives.",
+      },
+      {
+        src: "/project-prints/upwork-cms/09-testimonials-public-trust.png",
+        caption:
+          "Public trust and citizen feedback section showcasing community testimonials with verified contributor badges.",
+      },
+      {
+        src: "/project-prints/upwork-cms/10-mobile-gov-portal.png",
+        caption:
+          "Mobile responsive public portal view optimized for touch navigation and screen readers on 390px viewports.",
+      },
+      {
+        src: "/project-prints/upwork-cms/11-mobile-puck-editor.png",
+        caption:
+          "Mobile responsive visual editor layout allowing on-the-go page review and component property inspection.",
+      },
+    ],
     paragraphs: [
-      "Delivered a comprehensive visual page builder and content management system for an international client via Upwork, earning a 5-star review.",
-      "Translated complex design systems directly from Figma into reusable, modular React components integrated with the Puck visual editor. This allowed non-technical marketing teams to visually compose, arrange, and publish high-converting landing pages independently.",
-      "Focused on performance optimization, responsive layouts across mobile and desktop, and strict TypeScript safety across the entire component library.",
+      "Built for an Australian Government service provider via Upwork, this visual content management system allows editorial teams to compose, structure, and publish public-facing policy and community portal pages without writing code.",
+      "I implemented the visual authoring engine using the Puck CMS framework, Next.js 13 App Router, and TypeScript. Each building block, from hero sections and civic consultation workflows to accessible form controls, was translated directly from Figma into modular React components with typed property schemas. Editors drag blocks onto a live canvas and configure headings, images, and action links through a real-time property inspector.",
+      "The component library adheres to Australian Government Design System standards, incorporating Material UI, Radix primitives, and Tailwind CSS for accessibility, responsive typography, and WCAG-compliant contrast ratios. The contract concluded with a 5.0-star Upwork review.",
     ],
   },
 ];
