@@ -13,11 +13,111 @@ export interface Project {
   outcome: string;
   logo: string;
   cover: string;
+  ratingBadge?: string;
   paragraphs: string[];
   prints?: ProjectPrint[];
 }
 
 export const projects: Project[] = [
+  {
+    slug: "pathfinder",
+    title: "Pathfinder",
+    subtitle: "AI-driven educational discovery and career guidance platform with RAG, LangChain, and Pinecone",
+    client: "Upwork Client (Educational Platform)",
+    timeline: "Feb 2025 - May 2025",
+    role: "AI & Full Stack Engineer",
+    outcome:
+      "Engineered an intelligent Retrieval-Augmented Generation (RAG) discovery engine with LangChain, Pinecone vector embeddings, and OpenAI LLMs to match students with university degrees and career paths, earning a 5.0-star Upwork review.",
+    logo: "/images/pathfinder-favicon.png",
+    cover: "/project-prints/pathfinder/00-cover.png",
+    ratingBadge: "/images/upwork-5-star-review.png",
+    prints: [
+      {
+        src: "/project-prints/pathfinder/01-college-recommendations-desktop.png",
+        caption:
+          "RAG college discovery engine featuring semantic search across degree programs, relevance sorting, and institutional cards.",
+      },
+      {
+        src: "/project-prints/pathfinder/02-career-recommendations-desktop.png",
+        caption:
+          "AI career recommendations matching student strengths with industry sectors, salary expectations ($90k-$120k), and growth rates.",
+      },
+      {
+        src: "/project-prints/pathfinder/03-compare-colleges-desktop.png",
+        caption:
+          "Multi-college comparison matrix comparing admissions, tuition fees, and degree offerings side by side.",
+      },
+      {
+        src: "/project-prints/pathfinder/04-strengths-assessment-desktop.png",
+        caption:
+          "Psychometric strengths evaluation module measuring cognitive traits such as Achiever and Problem-Solving on a 5-point scale.",
+      },
+      {
+        src: "/project-prints/pathfinder/05-user-profile-desktop.png",
+        caption:
+          "Student dashboard and profile hub displaying completed assessments, strengths reports, and bookmarked colleges.",
+      },
+      {
+        src: "/project-prints/pathfinder/06-signup-onboarding-desktop.png",
+        caption:
+          "Multi-role account registration interface supporting Students, School Administrators, and Guidance Counselors.",
+      },
+      {
+        src: "/project-prints/pathfinder/07-college-recommendations-mobile.png",
+        caption:
+          "Mobile college recommendations feed with interactive filters and touch-optimized institution cards.",
+      },
+      {
+        src: "/project-prints/pathfinder/08-career-recommendations-mobile.png",
+        caption:
+          "Mobile career guidance view with industry badges, salary benchmarks, and matching skills tags.",
+      },
+      {
+        src: "/project-prints/pathfinder/09-compare-colleges-mobile.png",
+        caption:
+          "Mobile university comparison tool evaluating tuition, campus settings, and program levels.",
+      },
+      {
+        src: "/project-prints/pathfinder/10-student-dashboard-mobile.png",
+        caption:
+          "Mobile student portal tracking psychometric assessment progress and quick recommendation shortcuts.",
+      },
+      {
+        src: "/project-prints/pathfinder/11-user-profile-mobile.png",
+        caption:
+          "Mobile profile view displaying account credentials, strengths report status, and saved programs.",
+      },
+      {
+        src: "/project-prints/pathfinder/12-strengths-assessment-mobile.png",
+        caption:
+          "Mobile psychometric assessment question card with quick response selectors.",
+      },
+      {
+        src: "/project-prints/pathfinder/13-signup-mobile.png",
+        caption:
+          "Mobile account creation flow with role selection and credentials configuration.",
+      },
+      {
+        src: "/project-prints/pathfinder/14-college-filters-modal-mobile.png",
+        caption:
+          "Mobile college discovery filter modal with tuition sliders, state selectors, and setting options.",
+      },
+      {
+        src: "/project-prints/pathfinder/15-email-confirmation-mobile.png",
+        caption:
+          "Mobile email verification step with one-time security code confirmation.",
+      },
+      {
+        src: "/project-prints/pathfinder/16-password-reset-desktop.png",
+        caption:
+          "Secure account recovery flow with automated email reset link generation.",
+      },
+    ],
+    paragraphs: [
+      "Pathfinder is an educational discovery platform created to help international students find the right universities and careers. After resolving critical production bugs in a client's marketing API, I was referred to lead the architecture and frontend implementation of Pathfinder's AI recommendation engine.",
+      "I constructed the Retrieval-Augmented Generation (RAG) pipeline using LangChain, Pinecone vector embeddings, and OpenAI models. The system evaluates student psychometric assessments, matches them against institutional databases and employment market statistics, and generates personalized recommendations. I also developed the responsive web interface across desktop and mobile views based on custom Figma designs, earning a 5.0-star client review on Upwork.",
+    ],
+  },
   {
     slug: "admin-crm",
     title: "Admin CRM for marketing company",
@@ -610,23 +710,6 @@ export const projects: Project[] = [
       "Delivered a comprehensive visual page builder and content management system for an international client via Upwork, earning a 5-star review.",
       "Translated complex design systems directly from Figma into reusable, modular React components integrated with the Puck visual editor. This allowed non-technical marketing teams to visually compose, arrange, and publish high-converting landing pages independently.",
       "Focused on performance optimization, responsive layouts across mobile and desktop, and strict TypeScript safety across the entire component library.",
-    ],
-  },
-  {
-    slug: "upwork-rag",
-    title: "Upwork RAG",
-    subtitle: "RAG education system with LangChain and Pinecone",
-    client: "Upwork Client",
-    timeline: "2024",
-    role: "AI & Full Stack Engineer",
-    outcome:
-      "Recovered disrupted API integrations and constructed an intelligent Retrieval-Augmented Generation (RAG) assistant with LangChain, Pinecone vector search, and OpenAI embeddings.",
-    logo: "/images/logo-alpha.png",
-    cover: "/images/work-gamma.jpg",
-    paragraphs: [
-      "Stepped into an urgent API recovery and AI enhancement project on Upwork to diagnose failing third-party integrations and build an intelligent AI knowledge assistant.",
-      "Implemented a Retrieval-Augmented Generation (RAG) architecture using LangChain, Pinecone vector embeddings, and OpenAI APIs, enabling semantic search and context-aware responses across technical documentation and course materials.",
-      "Stabilized production API routes, implemented token caching and error retry policies, and delivered an intuitive chat interface with rapid response latency.",
     ],
   },
 ];

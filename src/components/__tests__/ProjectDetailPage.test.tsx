@@ -21,6 +21,7 @@ describe("ProjectDetailPage", () => {
     expect(screen.getByText(/influencer profile crm/i)).toBeDefined();
 
     // Up next in master-detail sidebar
+    expect(screen.getByText("Pathfinder")).toBeDefined();
     expect(screen.getByText("Advertiser Platform")).toBeDefined();
     expect(screen.getByText("Assessor Platform for Influencer Management")).toBeDefined();
     expect(screen.getByText("Influencer App (App-Loja)")).toBeDefined();
@@ -32,6 +33,21 @@ describe("ProjectDetailPage", () => {
     expect(screen.getByText("SideUp Business Portal (Legacy v1)")).toBeDefined();
     expect(screen.getByText("SideUp Admin Console (Legacy v1)")).toBeDefined();
     expect(screen.getByText("SideUp Employee App (Legacy v1)")).toBeDefined();
+  });
+
+  it("renders Pathfinder flagship case study with Upwork 5-star rating callout and prints gallery", async () => {
+    const page = await ProjectDetailPage({
+      params: Promise.resolve({ slug: "pathfinder" }),
+    });
+    render(page);
+
+    expect(screen.getByRole("heading", { name: "Pathfinder" })).toBeDefined();
+    expect(screen.getByText(/5.0 Star Client Rating on Upwork/i)).toBeDefined();
+    expect(screen.getByText("Upwork Client (Educational Platform)")).toBeDefined();
+    expect(screen.getByText("Feb 2025 - May 2025")).toBeDefined();
+    expect(screen.getByText(/RAG college discovery engine featuring semantic search/i)).toBeDefined();
+    expect(screen.getByText(/Multi-college comparison matrix/i)).toBeDefined();
+    expect(screen.getByText(/Psychometric strengths evaluation module/i)).toBeDefined();
   });
 
   it("renders Invoicing & Accountant Portal case study with accountant delegation workflow", async () => {

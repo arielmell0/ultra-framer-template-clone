@@ -49,6 +49,32 @@ export default async function ProjectDetailPage({ params }: Props) {
       {/* Main detail reading area */}
       <main className="flex-1 min-w-0 py-10 px-4 md:px-0">
         <div className="w-full max-w-[540px] mx-auto flex flex-col gap-10">
+          {/* Upwork 5-Star Rating Callout */}
+          {project.ratingBadge && (
+            <div className="overflow-hidden rounded-xl border border-[#383838] bg-[#282828] p-4 flex flex-col gap-3 shadow-lg">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="flex text-[#14a800] text-sm">★★★★★</span>
+                  <span className="text-[13px] font-medium text-[#ededed]">5.0 Star Client Rating on Upwork</span>
+                </div>
+                <span className="text-[11px] font-mono uppercase tracking-wider px-2 py-0.5 rounded bg-[#14a800]/20 text-[#2bd67b]">
+                  Verified Job
+                </span>
+              </div>
+              <div className="overflow-hidden rounded-lg bg-white p-1">
+                <Image
+                  src={project.ratingBadge}
+                  alt="Upwork 5-star completed job reviews"
+                  width={720}
+                  height={385}
+                  priority
+                  unoptimized
+                  className="w-full object-contain"
+                />
+              </div>
+            </div>
+          )}
+
           {/* Cover image (280px height) */}
           <div className="overflow-hidden rounded-xl bg-[#282828]">
             <Image
@@ -57,6 +83,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               width={540}
               height={280}
               priority
+              unoptimized
               className="h-[280px] w-full object-cover"
             />
           </div>

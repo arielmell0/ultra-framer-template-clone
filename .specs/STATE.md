@@ -37,6 +37,11 @@
 - **Reason**: The user requested adding the rewritten SideUp v2 platform projects, showing both the modern scalable architecture with purple rebrand and preserving the v1 legacy history.
 - **Trade-off**: Total project count increases to 14; legacy routes remain intact.
 - **Scope**: `src/data/projects.ts`, `public/images/sideup-purple-favicon.png`, `public/project-prints/sideup-v2/`, and test suites.
+### AD-006
+- **Decision**: Elevate Pathfinder to the #1 flagship showcase at the very top of the Works portfolio (`projects[0]`), featuring 16 authentic interface prints from `project-prints/pathfinder/`, official gold mountain favicon (`/images/pathfinder-favicon.png`), and an authentic 5.0-star Upwork client review callout rendered at the top of `/work/pathfinder`. Keep `/work/upwork-rag` backwards-compatible via redirect to `/work/pathfinder`.
+- **Reason**: The user explicitly requested featuring Pathfinder at the top of Works as their premier RAG showcase, with their verified Upwork 5-star rating displayed at the top of the detail page.
+- **Trade-off**: Replaces the placeholder `upwork-rag` entry while preserving `/work/upwork-cms`; total project count remains 14.
+- **Scope**: `src/data/projects.ts`, `src/app/work/[slug]/page.tsx`, `src/app/work/upwork-rag/page.tsx`, `public/images/pathfinder-favicon.png`, `public/images/upwork-5-star-review.png`, `public/project-prints/pathfinder/`, and test suites.
 - **Date**: 2026-09-15
 - **Status**: active
 
@@ -44,11 +49,11 @@
 
 ## Handoff
 
-- **Feature**: sideup-v2-rebrand
-- **Phase / Task**: Phase 1 / T2 - Add SideUp v2 rewritten platforms to projects data module
-- **Completed**: T1 (Copy SideUp v2 prints and generate purple rebrand favicon)
-- **In-progress** (file:line): T2 (src/data/projects.ts:380)
-- **Next step**: Update src/data/projects.ts with v2 applications
+- **Feature**: pathfinder
+- **Phase / Task**: Phase 1 / T2 - Implement Pathfinder as top #1 flagship project in projects.ts
+- **Completed**: T1 (Organize 16 Pathfinder prints and extract gold mountain logo)
+- **In-progress** (file:line): T2 (src/data/projects.ts:1)
+- **Next step**: Add pathfinder as projects[0] in src/data/projects.ts
 - **Blockers**: none
-- **Uncommitted files**: public/images/sideup-purple-favicon.*, public/project-prints/sideup-v2/
+- **Uncommitted files**: public/images/pathfinder-favicon.png, public/images/upwork-5-star-review.png, public/project-prints/pathfinder/
 - **Branch**: master

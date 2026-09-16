@@ -2,9 +2,10 @@ import { describe, it, expect } from "vitest";
 import { projects } from "./projects";
 
 describe("projects data", () => {
-  it("contains all separated marketing platforms, SideUp systems, and freelance projects", () => {
+  it("contains all separated marketing platforms, SideUp systems, and freelance projects with Pathfinder on top", () => {
     const slugs = projects.map((p) => p.slug);
     expect(slugs).toEqual([
+      "pathfinder",
       "admin-crm",
       "advertisers-platform",
       "agencies-platform",
@@ -18,8 +19,23 @@ describe("projects data", () => {
       "sideup-admin-portal",
       "sideup-employee-app",
       "upwork-cms",
-      "upwork-rag",
     ]);
+  });
+
+  it("contains real prints gallery, logo, and rating badge for flagship Pathfinder RAG", () => {
+    const pathfinder = projects[0];
+    expect(pathfinder.slug).toBe("pathfinder");
+    expect(pathfinder.title).toBe("Pathfinder");
+    expect(pathfinder.logo).toBe("/images/pathfinder-favicon.png");
+    expect(pathfinder.cover).toBe("/project-prints/pathfinder/00-cover.png");
+    expect(pathfinder.ratingBadge).toBe("/images/upwork-5-star-review.png");
+    expect(pathfinder.prints).toBeDefined();
+    expect(pathfinder.prints?.length).toBe(16);
+
+    for (const print of pathfinder.prints!) {
+      expect(print.src).toContain("/project-prints/pathfinder/");
+      expect(print.caption.length).toBeGreaterThan(10);
+    }
   });
 
   it("validates required fields for each project", () => {
