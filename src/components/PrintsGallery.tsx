@@ -156,7 +156,6 @@ export function PrintsGallery({ prints }: PrintsGalleryProps) {
                     alt={print.caption}
                     width={540}
                     height={340}
-                    unoptimized
                     className="w-full h-auto object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
                   />
 
@@ -210,7 +209,6 @@ export function PrintsGallery({ prints }: PrintsGalleryProps) {
                       alt={print.caption}
                       width={540}
                       height={340}
-                      unoptimized
                       className="w-full h-auto object-cover object-top"
                     />
 
@@ -240,7 +238,6 @@ export function PrintsGallery({ prints }: PrintsGalleryProps) {
                       alt={print.caption}
                       width={540}
                       height={340}
-                      unoptimized
                       className="w-full h-auto object-cover object-top"
                     />
 
@@ -329,7 +326,6 @@ export function PrintsGallery({ prints }: PrintsGalleryProps) {
                 alt={selectedPrint.caption}
                 width={1440}
                 height={900}
-                unoptimized
                 className="w-full h-auto object-contain rounded-lg"
               />
             </div>

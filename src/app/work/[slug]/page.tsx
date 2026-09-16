@@ -69,7 +69,6 @@ export default async function ProjectDetailPage({ params }: Props) {
                   width={720}
                   height={385}
                   priority
-                  unoptimized
                   className="w-full object-contain"
                 />
               </div>
@@ -84,7 +83,6 @@ export default async function ProjectDetailPage({ params }: Props) {
               width={540}
               height={280}
               priority
-              unoptimized
               className="h-[280px] w-full object-cover"
             />
           </div>

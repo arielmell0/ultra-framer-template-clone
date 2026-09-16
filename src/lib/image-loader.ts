@@ -9,5 +9,9 @@ export default function imageLoader({
     return src;
   }
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  if (basePath && src.startsWith(basePath)) {
+    return src;
+  }
   return `${basePath}${src.startsWith("/") ? "" : "/"}${src}`;
 }
+
